@@ -1,0 +1,29 @@
+.form__group {
+    --gap: 16px;
+    display: grid;
+    grid-gap: var(--gap);
+    margin-bottom: var(--spc__spacing--10);
+}
+.form__label {
+    font-family: var(--ff__dmSans--regular, sans-serif);
+    font-size: var(--scale-h5);
+    font-weight: var(--fw__bold);
+}
+.form__field {
+    padding: var(--spc__spacing--7) var(--spc__spacing--5) var(--spc__spacing--7) var(--spc__spacing--6);
+    border-radius: 46px;
+    border: 1px solid hsla(var(--clr__accent--100));
+    box-shadow: 0px 2px 6px hsla(var(--bg__primary--300) / 0.07);
+
+    font-family: var(--ff__dmSans--medium, sans-serif);
+    font-size: var(--scale-p2);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    border: none;
+}
+.form__field:hover,
+.form__field:active,
+.form__field:focus {
+    border: hsla(var(--clr__neutral--300));
+    transition: all 0.3s ease-in;
+}
