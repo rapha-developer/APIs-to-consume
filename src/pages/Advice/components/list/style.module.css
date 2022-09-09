@@ -10,6 +10,11 @@
     grid-gap: var(--gap);
     justify-items: center;
 }
+@media screen and (max-width: 550px) {
+    .adviceSection__list {
+        --min__width: 90%;
+    }
+}
 .adviceSection__header {
     display: grid;
     margin-left: var(--spc__spacing--3);
