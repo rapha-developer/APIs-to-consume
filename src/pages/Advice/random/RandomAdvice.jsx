@@ -1,49 +1,52 @@
+import { useState } from 'react'
+import FlashAdvice from '../components/flash/FlashAdvice'
+import HeadlineAdvice from '../components/headline/HeadlineAdvice'
+import { adviceCardTitle, headlineAdviceData } from '../../../data/constants'
 import styles from './style.module.css'
 
 function RandomAdvice() {
-	const card = {
-		title: "“Retention is key for a good growth marketing strategy”",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius turpis dolor adipiscing suscipit nibh ipsum accumsan.",
-	};
-	const cardApi = {
-		subtitle: "About the eBook",
-		title: "Our eBook includes 100+ pages on email marketing",
-		description:
-			"Ut enim ad minim veniam, quis nostrud exercitation ullamco mere laboris nisi ut aliquip ex ea commodo conse.",
-		stats: {
-			number: 10,
-			signal: "+",
-			label: "pages",
-		},
-		button: "Download eBook",
-	};
+    const [adviceCount, setAdviceCount] = useState(0)
+    function increaseAdviceCount() {
+        const one = 1  
+        setAdviceCount((prevCount) => prevCount + one)
+    }
+
+    const [advice, setAdvice] = useState({
+        slip: {
+            advice: 'Click the button to appear a good advice for you here...',
+            id: "This ID is unique for advice"
+        }
+    });
+    async function handleClick() {
+        const url = `https://api.adviceslip.com/advice`
+        await fetch(url)
+        .then(res => res.json())
+        .then(data => setAdvice(data))
+        .catch((error) => alert(error))
+
+        increaseAdviceCount()
+    }
 	return (
         <section className={styles.sectionCard}>
             <div className="container">
-            <div className={styles.card__row}>
-                <div className="card__col">
-                    <div className={styles.card}>
-                        <div className={styles.card__head}>
-                            <h4 className={styles.card__title}>{card.title}</h4>
-                        </div>
-                        <div className={styles.card__content}>
-                            <p className={styles.card__message}>"{card.description}"</p>
-                        </div>
+                <div className={styles.card__row}>
+                    <div className="card__col">
+                        <FlashAdvice 
+                            title={adviceCardTitle}
+                            advice={advice}
+                        />
+                    </div>
+                    <div className={`card__col columnInfo`}>
+                        <HeadlineAdvice 
+                            subtitle={headlineAdviceData.subtitle}
+                            title={headlineAdviceData.title}
+                            description={headlineAdviceData.description}
+                            stats={headlineAdviceData.stats}
+                            adviceCount={adviceCount}
+                            callAdvice={() => handleClick()}
+                        />
                     </div>
                 </div>
-                <div className={`${styles.cardApi__columnInfo} card__col`}>
-                    <div className={styles.cardApi__wrapper} >
-                        <h5 className={`${styles.cardApi__subtitle} uppercase`}>{cardApi.subtitle}</h5>
-                        <h2 className={styles.cardApi__title}>{cardApi.title}</h2>
-                        <p className={styles.cardApi__desc}>{cardApi.description}</p>
-                        <h6 className={styles.cardApi__stat}>{cardApi.stats.number}<span>{cardApi.stats.signal}</span></h6>
-                        <p className={styles.cardApi__label}>{cardApi.stats.label}</p>
-                        <a href="#"
-                            className={styles.cardApi__button}>{cardApi.button}</a>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
 	);
