@@ -27,3 +27,15 @@ export const findAdviceData = {
     title: "Advice API",
 }
 export const adviceSubtitle = "╰----╮ Latest advices"
+
+export const adviceCardTitle = "“Um conselho aparecerá diante dos teus olhos...”"
+export const headlineAdviceData = {
+    subtitle: "Random Advice",
+    title: "Get random advice every time you click the button below",
+    description:
+        "“Receba um conselho aleatório a cada vez que você clicar no botão abaixo. Quando clicar, aumentará o contador.” Portuguese description.",
+    stats: {
+        signal: "+",
+        label: "Advice(s)",
+    },
+}
