@@ -24,7 +24,7 @@ export const items = [
 ];
 export const findAdviceData = {
     header: "Find advice by 'term' on api",
-    title: "Advice API",
+    title: "Use Advice Slip API",
 }
 export const adviceSubtitle = "╰----╮ Latest advices"
 
@@ -38,4 +38,10 @@ export const headlineAdviceData = {
         signal: "+",
         label: "Advice(s)",
     },
+}
+export const heroData = {
+    subtitle: "API: Application programming interface",
+    title: "Coleção de API'S para consumir com Fetch",
+    description: "API é um conjunto de normas que possibilita a comunicação entre plataformas através de uma série de padrões e protocolos.",
+    short_information: 'Este website é apenas para estudo!'
 }
