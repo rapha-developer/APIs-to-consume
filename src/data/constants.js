@@ -43,5 +43,6 @@ export const heroData = {
     subtitle: "API: Application programming interface",
     title: "Coleção de API'S para consumir com Fetch",
     description: "API é um conjunto de normas que possibilita a comunicação entre plataformas através de uma série de padrões e protocolos.",
-    short_information: 'Este website é apenas para estudo!'
+    short_information: 'Este website é apenas para estudo!',
+    date: '02-09-2022'
 }
