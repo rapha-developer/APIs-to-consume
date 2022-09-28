@@ -1,0 +1,101 @@
+.AllApis {
+    position: relative;
+    padding-block: var(--spc__scale--20) var(--spc__scale--10);
+}
+.bgRectangleWithCurve {
+    position: absolute;
+    top: -60px;
+    left: -10px;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+.bgRectangle {
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    height: fit-content;
+    z-index: -1;
+}
+.__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h2);
+    font-weight: var(--fw__bold);
+    color: var(--clr__black--100);
+    margin-bottom: var(--spc__scale--7);
+}
+.__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__regular);
+    color: var(--clr__black--100);
+    margin-bottom: var(--spc__scale--15);
+}
+.__row {
+    --gap: 35px;
+    display: grid;
+    grid-gap: var(--gap);
+    position: relative;
+}
+.apis__collection {
+    display: grid;
+    grid-gap:  30px;
+    justify-items: center;
+}
+.ellipseCircle {
+    --bottom: -60px;
+    --right: 40px;
+    position: absolute;
+    bottom:var(--bottom);
+    right: var(--right);
+    z-index: -1;
+}
+@media screen and (min-width: 625px) {
+    .apis__collection {
+        --min__width: 308px;
+        grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
+        width: min(725px, 100%);
+    }
+    .bgRectangle {
+        top: 25%;
+        width: 70%;
+    }
+
+}
+@media screen and (min-width: 700px) {
+    .apis__collection > :nth-child(odd) {
+        transform: translateY(64px);
+    }
+    .bgRectangle {
+        top: 40%;
+        width: 90%;
+    }
+    .ellipseCircle {
+        --bottom: -72px;
+    }
+}
+@media screen and (min-width: 1040px) {
+    .__row {
+        --gap: 0px;
+        grid-template-columns: 360px 1fr;
+    }
+    .bgRectangle {
+        top: 25%;
+        width: 70%;
+    }
+    .bgRectangleWithCurve {
+        top: 18%;
+        left: -45px;
+    }
+    .__columnMain {
+        display: grid;
+        place-content: center;
+    }
+    .__columnCards {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+    .ellipseCircle {
+        --right: 54px;
+    }
+}
