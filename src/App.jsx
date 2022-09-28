@@ -1,19 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Hero from './pages/Home/Hero'
-import Navbar from './components/navbar/Navbar'
-import FindAdvice from './pages/Advice/find/FindAdvice'
-import RandomAdvice from './pages/Advice/random/RandomAdvice'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <RandomAdvice />
-      <FindAdvice />
+      <h1>Vite + React</h1>
     </div>
   )
 }
