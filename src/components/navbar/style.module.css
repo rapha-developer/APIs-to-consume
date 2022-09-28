@@ -1,0 +1,97 @@
+.navbar {
+    padding: var(--spc__scale--12) 0;
+}
+.navbar__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo {
+    width: 100px;
+    height: 40px;
+}
+.navbar__menu {
+    padding-top: var(--space__base);
+    float: right;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+.navbar__menu img {
+    width: 50px;
+    height: 50px;
+}
+.navbar__list {
+    padding-inline: var(--spc__scale--20);
+}
+.navbar__item {
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: var(--spc__scale--4);
+}
+.navbar__item + .navbar__item {
+    padding-top: var(--spc__scale--4);
+    border-top: 1px solid var(--clr__black--100);
+}
+.navbar__link {
+    font-family: var(--ff__Jost, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__regular);
+    color: var(--clr__black--100);
+    letter-spacing: var(--letter--medium);
+    width: 100%;
+    cursor: pointer;
+}
+.navbar__link:hover, 
+.navbar__link:focus {
+    color: blueviolet;
+    padding-bottom: var(--spc__scale--2);
+    border-bottom: 1px solid var(--clr__black--100);
+    transition: all 0.3s ease-in;
+}
+@media screen and (max-width: 766px) {
+    .navbar__menu {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar__head[data-visible="true"] .navbar__menu {
+        transform: rotate(-90deg);
+    }
+    .navbar__body {
+        border-bottom: 1px solid antiquewhite;
+        padding-bottom: var(--spc__scale--2);
+        transition: all 0.3s ease-out;
+    }
+    .navbar__list {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s max-height ease-in;
+    }
+    #navbar__body[data-visible="true"] {
+        padding: var(--spc__scale--4) var(--spc__scale--6);
+    }
+    #navbar__body[data-visible="true"] .navbar__list {
+        max-height: 400px;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    .navbar__row {
+        display: grid;
+        grid-template-columns: 150px auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar__list {
+        padding-inline: 0;
+        display: flex;
+        gap: 60px;
+    }
+    .navbar__item {
+        padding-bottom: 0;
+    }
+    .navbar__item + .navbar__item {
+        padding-top: 0;
+        border-top: none;
+    }
+}
