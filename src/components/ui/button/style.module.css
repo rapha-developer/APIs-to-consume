@@ -1,0 +1,47 @@
+.btn {
+    display: block;
+    padding: var(--spc__scale--5) var(--spc__scale--12) var(--spc__scale--5) var(--spc__scale--10);
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__regular);
+    letter-spacing: var(--letter--regular);
+    border: 0.5px solid var(--clr__neutral--100);
+    border-radius: 60px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+.btn__primary {
+    background: var(--clr__accent--100);
+    color: var(--clr__neutral--100);
+}
+.btn::before {
+    /* Black Rightwards Arrowhead  */
+    --arrowDown: "➤";
+    --top: 25%;
+    --right: 10px;
+    --size: 30px;
+    position: absolute;
+    content: var(--arrowDown);
+    top: var(--top);
+    right: var(--right);
+    color: var(--clr__neutral--100);
+    width: var(--size);
+    height: var(--size);
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--scale--p1);
+
+    transition: all 0.3s ease-in;
+}
+.btn:hover::before,
+.btn:focus::before {
+    transform: rotate(90deg);
+}
