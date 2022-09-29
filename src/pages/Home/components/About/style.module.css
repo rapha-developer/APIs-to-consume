@@ -12,13 +12,13 @@
     font-family: var(--ff__Nunito, sans-serif);
     font-size: var(--scale--h1);
     font-weight: var(--fw__semiBold);
-    color: var(--clr__black--100);
+    color: hsla(var(--clr__neutral--800));
 }
 .aboutUs__description {
     font-family: var(--ff__firaSans, sans-serif);
     font-size: var(--scale--p2);
     font-weight: var(--fw__regular);
-    color: #757575;
+    color: hsla(var(--clr__neutral--600));
 }
 .__image {
     filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
@@ -35,7 +35,7 @@
     font-family: var(--ff__Nunito, sans-serif);
     font-size: var(--scale--h4);
     font-weight: var(--fw__bold);
-    color: var(--clr__black--100);
+    color: hsla(var(--clr__primary--100));
 }
 .aboutUs__bio {
     --width: 412px;
@@ -43,7 +43,7 @@
     font-size: var(--scale--p1);
     font-weight: var(--fw__regular);
     width: min(var(--width), 100%);
-    color: #565656;
+    color: hsla(var(--clr__neutral--600));
 }
 .__thirdColumn {
     display: grid;
