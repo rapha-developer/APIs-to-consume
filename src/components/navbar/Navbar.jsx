@@ -1,7 +1,7 @@
 import logo from '../../assets/logo-min.svg'
 import burgerIcon from'../../assets/burger-menu.svg'
 
-import styles from './styles.module.css'
+import styles from './style.module.css'
 import { useState } from 'react';
 
 function Navbar() {
