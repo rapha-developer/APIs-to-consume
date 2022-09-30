@@ -73,7 +73,7 @@
         --bottom: -72px;
     }
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1060px) {
     .__row {
         --gap: 0px;
         grid-template-columns: 360px 1fr;
