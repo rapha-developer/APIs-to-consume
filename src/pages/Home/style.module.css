@@ -63,7 +63,7 @@
     font-family: var(--ff__Nunito, sans-serif);
     font-size: var(--scale--h1);
     font-weight: var(--fw__bold);
-    color: var(--clr__black--100);
+    color: hsla(var(--clr__neutral--800));
     margin-bottom: var(--spc__scale--10);
     width: 100%;
 }
@@ -77,7 +77,7 @@
     font-family: var(--ff__firaSans, sans-serif);
     font-size: var(--scale--p1);
     font-weight: var(--fw__regular);
-    color: var(--clr__black--200);
+    color: hsla(var(--clr__neutral--600));
     margin-bottom: var(--spc__scale--8);
     max-width: var(--max__width);
 }
