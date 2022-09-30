@@ -48,14 +48,14 @@
     font-family: var(--ff__Jost, sans-serif);
     font-size: var(--scale--h2);
     font-weight: var(--fw__semiBold);
-    color: var(--clr__black--100);
+    color: hsla(var(--clr__neutral--800));
     width: min(468px, 100%);
 }
 .__description {
     font-family: var(--ff__firaSans, sans-serif);
     font-size: var(--scale--p1);
     font-weight: var(--fw__regular);
-    color: #565656;
+    color: hsla(var(--clr__neutral--600));
     width: min(532px, 100%);
 }
 @media screen and (min-width: 768px) {
