@@ -2,7 +2,7 @@ import companyBehanceSvg from '../../../../assets/myCompanyBehance.svg'
 import companyTenziesSvg from '../../../../assets/myCompanyTenzies.svg'
 import companyCodepenSvg from '../../../../assets/myCompanyCodepen.svg'
 import Company from '../Company/Company'
-import styles from './styles.module.css'
+import styles from './style.module.css'
 
 import { createMyProjectTitle, createListOfCompanies } from '../../../../data/constants'
 
