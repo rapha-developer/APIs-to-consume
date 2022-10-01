@@ -1,0 +1,24 @@
+.randomAdvice {
+    padding-block: var(--spc__scale--30) var(--spc__scale--20);
+}
+.__row {
+    --gap: 80px;  
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+    .__row {
+        --gap: 30px;
+        display: grid;
+        grid-gap: var(--gap);
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    .__columnAdviceCard > div {
+        transform: rotate(-15deg);
+    }
+}
+.__columnMain {
+    position: relative;
+    padding-block: var(--spc__scale--6);
+}
