@@ -42,8 +42,24 @@ const createListOfCardsApi = [
         iconType: 'chart'
     }
 ];
+const createFirstAdvice = {
+    slip: {
+        advice: 'Click the button to appear a good advice for you here...',
+        id: "This ID is unique for advice"
+    }
+};
+const createAdviceHero = {
+    title: 'Get Random Advice after click the button below',
+    description: "“Receba um conselho aleatório a cada vez que você clicar no botão abaixo. Quando clicar, aumentará o contador de conselhos recebidos.” Portuguese description.",
+    stats: {
+        signal: "+",
+        label: "Advice(s)",
+    },
+}
 export {
     createMyProjectTitle,
     createListOfCompanies,
-    createListOfCardsApi
+    createListOfCardsApi,
+    createFirstAdvice,
+    createAdviceHero
 }
