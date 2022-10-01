@@ -1,0 +1,23 @@
+.__bgIcon {
+    background: hsla(var(--bg__icon--100));
+    padding: var(--spc__scale--6);
+    width: 121px;
+    height: 121px;
+    border-radius: 20px;
+    margin-bottom: var(--spc__scale--8);
+}
+.__bgIcon[data-visible="wallet"] {
+    background: hsla(var(--bg__icon--200));
+}
+.__bgIcon[data-visible="code"] {
+    background: hsla(var(--bg__icon--300));
+}
+.__bgIcon[data-visible="chart"] {
+    background: hsla(var(--bg__icon--400));
+}
+.__icon {
+    --width: 74px;
+    --height: 74px;
+    width: var(--width);
+    height: var(--height);
+}
