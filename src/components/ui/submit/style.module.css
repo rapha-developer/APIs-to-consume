@@ -11,8 +11,7 @@
     position: relative;
     transition: all 0.3s ease-in;
 }
-.btn:hover,
-.btn:focus {
+.btn:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
