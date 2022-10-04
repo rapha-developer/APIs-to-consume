@@ -10,6 +10,7 @@ import AboutUs from './pages/Home/components/About/AboutUs'
 import Subscribe from './pages/Home/components/Subscribe/Subscribe'
 import Footer from './components/footer/Footer'
 import RandomAdvice from './pages/Advice/Random/RandomAdvice'
+import FindAdvice from './pages/Advice/Find/FindAdvice'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <HomePage />
       <MyProjects />
       <AllApis />
+      <FindAdvice />
       <RandomAdvice />
       <SectionVideo />
       <AboutUs />
