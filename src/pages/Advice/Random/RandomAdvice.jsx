@@ -3,8 +3,8 @@ import videoRectangleSvg from '../../../assets/videoRectangleWithCurve.svg'
 import Button from '../../../components/ui/button/Button'
 import Card from '../../../components/ui/card/Card'
 import { createListOfCardsApi, createFirstAdvice } from '../../../data/constants.js'
-import AdviceCard from '../components/AdviceCard/AdviceCard'
-import AdviceHeroSection from '../components/AdviceHeroSection/AdviceHeroSection'
+import AdviceCard from '../components/card/AdviceCard'
+import AdviceHeroSection from '../components/heroSection/AdviceHeroSection'
 
 import styles from './style.module.css'
 function RandomAdvice() {
