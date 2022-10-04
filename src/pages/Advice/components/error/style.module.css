@@ -1,0 +1,27 @@
+.notFoundAdvice__wrapper {
+    display: grid;
+    justify-items: center;
+    padding-block: var(--spc__scale--20);
+    /* background: hsla(var(--clr__primary--100)); */
+}
+.notFoundAdvice__icon {
+    height: 90px;
+    width: 90px;
+    margin-bottom: var(--spc__scale--4);
+}
+.notFoundAdvice__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h3);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__neutral--800));
+    text-align: center;
+    margin-bottom: var(--spc__scale--2);
+}
+.notFoundAdvice__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    line-height: 30px;
+    text-align: center;
+}
