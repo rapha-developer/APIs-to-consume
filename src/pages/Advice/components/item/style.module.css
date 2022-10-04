@@ -1,0 +1,48 @@
+.advice__item {
+    border: 1px solid hsla(var(--bg__card--100));
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    padding: var(--spc__scale--12) var(--spc__scale--8);
+    width: min(345px, 100%);
+    position: relative;
+    min-height: 350px;
+
+}
+@media screen and (min-width: 500px) {
+    .advice__item {
+        width: min(425px, 100%);
+        min-height: calc(100% + 15px);
+    }
+}
+.advice__body { 
+    --gap: 30px;
+    display: grid;
+    gap: var(--gap);
+    justify-items: center;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .advice__body {
+        --gap: 15px;
+        display: grid;
+        grid-gap: var(--gap);
+        grid-template-columns: 72px auto;
+        align-items: center;
+    }
+}
+.advice__date {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p4);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--500));
+}
+.advice__message {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    text-align: center;
+}
