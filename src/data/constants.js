@@ -56,10 +56,18 @@ const createAdviceHero = {
         label: "Advice(s)",
     },
 }
+const createInputToFindAdvice = [
+    {
+        name: 'searchByWord',
+        type: 'searchByWord',
+        placeholder: 'Write one subject { assunto } to find advice'
+    }
+]
 export {
     createMyProjectTitle,
     createListOfCompanies,
     createListOfCardsApi,
     createFirstAdvice,
-    createAdviceHero
+    createAdviceHero,
+    createInputToFindAdvice
 }
