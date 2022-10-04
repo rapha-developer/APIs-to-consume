@@ -1,0 +1,50 @@
+.heroForm__layers {
+    position: relative;
+}
+.heroForm__grid {
+    --top: -56px;
+    --right: 0px;
+    position: absolute;
+    top: var(--top);
+    right: var(--right);
+    z-index: -1;
+}
+.heroForm__rectangle {
+    --bottom: -39px;
+    --left: -38px;
+    position: absolute;
+    bottom: var(--bottom);
+    left: var(--left);
+    transform: rotate(90deg);
+    z-index: -1;
+}
+.heroForm__card {
+    background: hsla(var(--clr__accent--200));
+    border-radius: 75px;
+    padding: var(--spc__scale--20) var(--spc__scale--8) var(--spc__scale--20) var(--spc__scale--8);
+    width: min(668px, 100%);
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+@media screen and (min-width: 820px) {
+    .heroForm__grid {
+        --halfGrid: 334px;
+        --margin: calc(var(--halfGrid) + 50px);
+        --right: calc(50% - var(--margin));
+    }
+    .heroForm__rectangle {
+        --bottom: -45px;
+        --halfRectangle: 334px;
+        --margin: calc(var(--halfRectangle) + 50px);
+        --left: calc(50% - var(--margin));
+    }
+}
+.__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h2);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__neutral--800));
+    text-align: center;
+    margin-bottom: var(--spc__scale--10);
+}
