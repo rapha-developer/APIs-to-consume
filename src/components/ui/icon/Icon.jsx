@@ -8,7 +8,8 @@ import styles from './style.module.css'
 function Icon (props) {
     const iconData = {
         type: props.iconType,
-        svg: getIconFromType(props.iconType)
+        svg: getIconFromType(props.iconType),
+        size: props?.size || 'medium'
     }
     function getIconFromType(iconType) {
         const firstIcon = 0, secondIcon = 1, thirdIcon = 2;
@@ -20,6 +21,7 @@ function Icon (props) {
     return (
         <div className={styles.__bgIcon}
             data-visible={iconData.type}
+            data-size={iconData.size}
             >
             <img
                 src={iconData.svg}

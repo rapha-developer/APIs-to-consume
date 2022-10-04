@@ -1,10 +1,19 @@
 .__bgIcon {
     background: hsla(var(--bg__icon--100));
-    padding: var(--spc__scale--6);
-    width: 121px;
-    height: 121px;
     border-radius: 20px;
+    width: var(--width);
+    height: var(--height);
+}
+.__bgIcon[data-size='medium'] {
+    --width: 121px;
+    --height: 121px;
+    padding: var(--spc__scale--6);
     margin-bottom: var(--spc__scale--8);
+}
+.__bgIcon[data-size='small'] {
+    --width: fit-content;
+    --height: fit-content;
+    padding: var(--spc__scale--2) var(--spc__scale--4);
 }
 .__bgIcon[data-visible="wallet"] {
     background: hsla(var(--bg__icon--200));
