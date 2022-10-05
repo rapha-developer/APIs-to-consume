@@ -96,13 +96,9 @@ p {
 	--scale--h5: 20px;
 	--scale--h6: 14px;
 
-	/* --scale--p1: 20px;
-	--scale--p2: 18px;
-	--scale--p3: 16px; */
-
-    --scale--p3: 20px;
+    --scale--p1: 20px;
     --scale--p2: 18px;
-    --scale--p1: 16px;
+    --scale--p3: 16px;
     --scale--p4: 14px;
     
 	--fw__extraLight: 200;
