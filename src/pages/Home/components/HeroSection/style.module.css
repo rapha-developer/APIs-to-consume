@@ -1,0 +1,92 @@
+
+.homeHero {
+    --min__height: 608px;
+    min-height: var(--min__height);
+
+    position: relative;
+}
+.homeHero__row {
+    --gap: var(--spc__scale--15);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--gap);
+}
+@media screen and (min-width: 1175px) {
+    .homeHero__row {
+        flex-direction: row;
+    }
+    .homeHero__colWithTitle {
+        padding-top: var(--spc__scale--30);
+    }
+}
+.homeHero__colWithBg {
+    margin-left: var(--spc__scale--12);
+    display: grid;
+    justify-content: end;
+}
+@media screen and (min-width: 1175px) {
+    .homeHero__colWithBg {
+        margin-left: 0px;
+    }
+}
+.homeHero__background {
+    width: fit-content;
+    display: grid;
+    position: relative;
+    left: max(1rem, calc(100vw - 1200px));
+}
+@media screen and (min-width: 1175px) {
+    .homeHero__background {
+        left: calc(calc(98.8vw - 1200px) / 2); 
+    }
+}
+.homeHero__bgCircle {
+    --left: 63px;
+    position: absolute;
+    top: 0;
+    left: calc(0% - var(--left));
+    z-index: -1;
+}
+.homeHero__bgRectangleWithCurve {
+    --bottom: -96px;
+    --min__right: 120px;
+    position: absolute;
+    bottom: var(--bottom);
+    right: min(var(--min__right), 10%);
+    z-index: -1;
+}
+@media screen and (min-width: 1175px) {
+    .homeHero__bgRectangleWithCurve {
+        --bottom: 0px;
+    }
+}
+.homeHero__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h1);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__neutral--800));
+    margin-bottom: var(--spc__scale--10);
+    width: 100%;
+}
+@media screen and (min-width: 1175px) {
+    .homeHero__title {
+        min-width: 500px;
+    }
+}
+.homeHero__description {
+    --max__width: 471px;
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    margin-bottom: var(--spc__scale--8);
+    max-width: var(--max__width);
+}
+.homeHero__grid {
+    --top: -44px;
+    --left: -66px;
+    position: relative;
+    top: var(--top);
+    left: var(--left);
+    z-index: -1;
+}
