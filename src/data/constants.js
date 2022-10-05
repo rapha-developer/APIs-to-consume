@@ -62,12 +62,35 @@ const createInputToFindAdvice = [
         type: 'searchByWord',
         placeholder: 'Write one subject { assunto } to find advice'
     }
-]
+];
+const createItemsToBuildNavbar = [
+    {
+        text: 'home',
+        url: '/'
+    },
+    {
+        text: 'advice',
+        url: '/advice'
+    },
+    {
+        text: 'service',
+        url: '#'
+    },
+    {
+        text: 'blog',
+        url: '#'
+    },
+    {
+        text: 'contact',
+        url: '#'
+    },
+];
 export {
     createMyProjectTitle,
     createListOfCompanies,
     createListOfCardsApi,
     createFirstAdvice,
     createAdviceHero,
-    createInputToFindAdvice
+    createInputToFindAdvice,
+    createItemsToBuildNavbar
 }
