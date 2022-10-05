@@ -1,32 +1,13 @@
+import { useState } from 'react';
 import logo from '../../assets/logo-min.svg'
 import burgerIcon from'../../assets/burger-menu.svg'
 
+import { createItemsToBuildNavbar } from '../../data/constants'
 import styles from './style.module.css'
-import { useState } from 'react';
 
 function Navbar() {
-    const items = [
-        {
-            text: 'home',
-            url: '#'
-        },
-        {
-            text: 'service',
-            url: '#'
-        },
-        {
-            text: 'project',
-            url: '#'
-        },
-        {
-            text: 'blog',
-            url: '#'
-        },
-        {
-            text: 'contact',
-            url: '#'
-        },
-    ];
+    const items = createItemsToBuildNavbar
+
     const navbarItems = items.map((navbarItem, key) => {
         return (
             <li className={styles.navbar__item} key={key} >
@@ -38,7 +19,6 @@ function Navbar() {
     const [visibility, setVisibility] = useState(false)
     function changeVisibility() {
         setVisibility((oldVisibility) => !oldVisibility)
-        console.log(visibility)
     }
     return (
         <nav className={styles.navbar}>
