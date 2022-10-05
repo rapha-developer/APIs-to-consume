@@ -76,7 +76,7 @@
 .homeHero__description {
     --max__width: 471px;
     font-family: var(--ff__firaSans, sans-serif);
-    font-size: var(--scale--p1);
+    font-size: var(--scale--p3);
     font-weight: var(--fw__regular);
     color: hsla(var(--clr__neutral--600));
     margin-bottom: var(--spc__scale--8);

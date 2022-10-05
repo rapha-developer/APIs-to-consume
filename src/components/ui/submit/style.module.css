@@ -2,7 +2,7 @@
     display: block;
     padding: var(--spc__scale--5) var(--spc__scale--10);
     font-family: var(--ff__firaSans, sans-serif);
-    font-size: var(--scale--p1);
+    font-size: var(--scale--p3);
     font-weight: var(--fw__regular);
     letter-spacing: var(--letter--regular);
     border: 0.5px solid hsla(var(--clr__neutral--100));

@@ -43,7 +43,7 @@
 }
 .card__description {
     font-family: var(--ff__firaSans, sans-serif);
-    font-size: var(--scale--p1);
+    font-size: var(--scale--p3);
     font-weight: var(--fw__regular);
     text-align: center;
     color: hsla(var(--clr__neutral--600));

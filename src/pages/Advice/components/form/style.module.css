@@ -14,7 +14,7 @@
 }
 .form__field {
     font-family: var(--ff__Nunito, sans-serif);
-    font-size: var(--scale--p1);
+    font-size: var(--scale--p3);
     font-weight: var(--fw__regular);
     width: 100%;
     color: hsla(var(--clr__neutral--600));

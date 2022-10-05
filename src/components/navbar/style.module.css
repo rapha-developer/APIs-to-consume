@@ -35,7 +35,7 @@
 }
 .navbar__link {
     font-family: var(--ff__Jost, sans-serif);
-    font-size: var(--scale--p1);
+    font-size: var(--scale--p3);
     font-weight: var(--fw__regular);
     color: hsla(var(--clr__neutral--800));
     letter-spacing: var(--letter--medium);
