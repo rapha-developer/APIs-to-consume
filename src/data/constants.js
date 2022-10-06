@@ -59,7 +59,7 @@ const createAdviceHero = {
 const createInputToFindAdvice = [
     {
         name: 'searchByWord',
-        type: 'searchByWord',
+        type: 'text',
         placeholder: 'Write one subject { assunto } to find advice'
     }
 ];
@@ -73,8 +73,8 @@ const createItemsToBuildNavbar = [
         url: '/advice'
     },
     {
-        text: 'service',
-        url: '#'
+        text: 'rick',
+        url: '/rickAndMorty'
     },
     {
         text: 'blog',
@@ -85,6 +85,19 @@ const createItemsToBuildNavbar = [
         url: '#'
     },
 ];
+const createPagesPosition = {
+    first: 0,
+    second: 1,
+    third: 2,
+}
+const createInputToFindCharacter = [
+    {
+        name: 'searchCharacterByName',
+        type: 'text',
+        placeholder: 'Write the name of a character from the Ricky and Morty series'
+    }
+];
+
 export {
     createMyProjectTitle,
     createListOfCompanies,
@@ -92,5 +105,7 @@ export {
     createFirstAdvice,
     createAdviceHero,
     createInputToFindAdvice,
-    createItemsToBuildNavbar
+    createItemsToBuildNavbar,
+    createPagesPosition,
+    createInputToFindCharacter
 }
