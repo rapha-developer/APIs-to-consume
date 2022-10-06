@@ -1,0 +1,32 @@
+
+.findCharacter {
+    padding-block: var(--spc__scale--20);
+}
+.findCharacter__grid {
+    --gap: var(--spc__scale--10);
+    display: grid;
+    grid-gap: var(--gap);
+    justify-items: center;
+}
+.firstRow {
+    --gap: var(--spc__scale--6);
+    display: grid;
+    grid-gap: var(--gap);
+    justify-items: center;
+}
+.__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h2);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.__subtitle {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+}
+.secondRow,
+.thirdRow {
+    width: 100%;
+}
