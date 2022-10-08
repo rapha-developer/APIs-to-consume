@@ -94,9 +94,17 @@ const createInputToFindCharacter = [
     {
         name: 'searchCharacterByName',
         type: 'text',
-        placeholder: 'Write the name of a character from the Ricky and Morty series'
+        placeholder: 'Write the name of a character from the Rick and Morty series'
     }
 ];
+const createInputToGetSingleCharacter = [
+    {
+        name: 'searchCharacterByID',
+        placeholder: 'Choose a number to get single character from the Rick and Morty series',
+        minimumValue: 1,
+        maximumValue: 286,
+    }
+]
 
 export {
     createMyProjectTitle,
@@ -107,5 +115,6 @@ export {
     createInputToFindAdvice,
     createItemsToBuildNavbar,
     createPagesPosition,
-    createInputToFindCharacter
+    createInputToFindCharacter,
+    createInputToGetSingleCharacter
 }
