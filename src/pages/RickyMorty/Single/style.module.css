@@ -1,0 +1,29 @@
+.singleCharacter {
+    padding-block: var(--spc__scale--26);
+}
+.__row {
+    --gap: 50px;
+    display: grid;
+    grid-gap: var(--gap);
+}
+.__columnHero {
+    position: relative;
+    width: min(479px, 100%);
+}
+@media screen and (min-width: 1024px) {
+    .__row {
+        grid-template-columns: 479px auto;
+    }
+    .__columnHero {
+        margin-block: auto;
+    }
+}
+.bgRectangleWithCurve {
+    --left: -10px;
+    --top: -60px;
+    position: absolute;
+    top: var(--top); 
+    left: var(--left);
+    transform: rotate(180deg);
+    z-index: 0;
+}
