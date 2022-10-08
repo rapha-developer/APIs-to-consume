@@ -1,8 +1,4 @@
 import bgRectangleSvg from "../../../../assets/bgRectangleBlue.svg";
-import boxSearchSvg from "../../../../assets/box-search 1.svg";
-import emptyWalletSvg from '../../../../assets/empty-wallet 1.svg'
-import codeSvg from '../../../../assets/code-1 1.svg'
-import chartSquare from '../../../../assets/chart-square 1.svg'
 
 import ellipseCircleSvg from '../../../../assets/Ellipse circle.svg'
 import rectangleWithCurveSvg from "../../../../assets/homeRectangleWithCurve.svg";
