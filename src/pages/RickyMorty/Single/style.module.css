@@ -27,3 +27,6 @@
     transform: rotate(180deg);
     z-index: 0;
 }
+.bgIllustration {
+    width: 100%;
+}

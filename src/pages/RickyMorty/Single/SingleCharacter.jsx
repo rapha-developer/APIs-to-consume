@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import IllustrationEducation from '../../../assets/Draw-kit-Illustrations-Education.svg'
 import rectangleWithCurveSvg from '../../../assets/homeRectangleWithCurve.svg'
 import RickSingleForm from '../components/singleForm/RickSingleForm';
 import RickSingleHero from '../components/singleHero/RickSingleHero';
@@ -32,6 +33,11 @@ function SingleCharacter() {
                         />
                     </div>
                     <div className={styles.__col}>
+                        {IsEmptyResultsFromApi &&
+                            <img src={IllustrationEducation}
+                            className={styles.bgIllustration}
+                            alt='Illustration with man with a notebook on the table' />
+                        }
                         {!IsEmptyResultsFromApi && 
                             <RickSingleProfile 
                                 id={resultsFromApi.id}
