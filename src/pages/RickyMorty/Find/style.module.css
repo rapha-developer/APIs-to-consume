@@ -25,6 +25,7 @@
     font-size: var(--scale--p1);
     font-weight: var(--fw__regular);
     color: hsla(var(--clr__neutral--600));
+    text-align: center;
 }
 .secondRow,
 .thirdRow {
