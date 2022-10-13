@@ -131,6 +131,9 @@ p {
 
     --letter--regular: 0.065em;
     --letter--medium: 0.1em;
+
+	--thumbBG: hsla(var(--clr__neutral--500));
+	--scrollbarBG: transparent;
 }
 body {
     min-height: 100vh;
@@ -148,4 +151,21 @@ body {
     --padding: 1rem;
     width: min(var(--max__width), 100% - (var(--padding) * 2));
     margin-inline: auto;
+}
+
+/* Scroll setting */
+body::-webkit-scrollbar {
+	width: 11px;
+}
+body {
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG) ;
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
 }
