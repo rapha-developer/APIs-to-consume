@@ -1,0 +1,11 @@
+.pokemon__collection {
+    --gap: 30px;
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media screen and (min-width: 1024px) {
+    .pokemon__collection {
+        --gap: 45px;
+    }
+}
