@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import RickPage from './pages/RickyMorty/RickPage'
 import { createItemsToBuildNavbar, createPagesPosition } from './data/constants'
+import PokemonPage from './pages/Pokemon/PokemonPage'
 function App() {
 
   return (
@@ -20,6 +21,8 @@ function App() {
               element={<AdvicePage />} />   
         <Route path={createItemsToBuildNavbar[createPagesPosition.third].url} 
               element={<RickPage />} />
+        <Route path={createItemsToBuildNavbar[createPagesPosition.fourth].url}
+              element={<PokemonPage />} />
       </Routes>
       <Footer />
     </div>
