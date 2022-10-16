@@ -1,0 +1,96 @@
+.heroPokemon {
+    padding-block: var(--spc__scale--15) var(--spc__scale--26);
+}
+.__row {
+    --gap: var(--spc__scale--10);
+    display: grid;
+    grid-gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+    .__row {
+        --min__width: 325px;
+        grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
+    }
+    .__columnMain {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.heroPokemon__info {
+    --gap: var(--spc__scale--4);
+    display: grid;
+    grid-gap: var(--gap);
+}
+.heroPokemon__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h1);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.heroPokemon__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    width: min(500px, 100%);
+    margin-bottom: var(--spc__scale--10);
+}
+.select__field {
+    --gap: var(--spc__scale--3);
+    display: grid;
+    grid-gap: var(--gap);    
+    align-items: center;
+    position: relative;
+}
+.select__label {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h5);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.form__field {
+    --gap: 15px;
+    display: grid;
+    grid-gap: var(--gap);
+    width: min(600px, 100%);
+}
+@media screen and (min-width: 768px) {
+    .form__field {
+        grid-template-columns: 6fr 4fr;
+    }
+}
+.selectGeneration {
+    appearance: none;
+    background-color: transparent;
+    width: 100%;
+    font-family: var(--ff__Jost, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__medium);
+    color: hsla(var(--clr__neutral--800));
+    line-height: 1.7;
+    z-index: 1;
+    outline: none;
+
+
+    min-width: 15ch;
+    cursor: pointer;
+    border: 1px solid hsla(var(--clr__neutral--400));
+    padding: var(--spc__scale--2) var(--spc__scale--4);
+
+    border-radius: 4px;
+}
+.selectGeneration::-ms-expand {
+    display: none;
+}
+.selectGeneration:focus {
+    cursor: pointer;
+    border: 1px solid hsla(var(--clr__neutral--600));
+    border-radius: inherit;
+}
+.option:hover,
+.option {
+    background-color: hsla(var(--clr__neutral--200));
+    font-size: var(--scale--p1);
+    margin-block: var(--spc__scale--3);
+}
