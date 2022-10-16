@@ -77,8 +77,8 @@ const createItemsToBuildNavbar = [
         url: '/rickAndMorty'
     },
     {
-        text: 'blog',
-        url: '#'
+        text: 'pokeApi',
+        url: '/pokeApi'
     },
     {
         text: 'contact',
@@ -89,6 +89,7 @@ const createPagesPosition = {
     first: 0,
     second: 1,
     third: 2,
+    fourth: 3,
 }
 const createInputToFindCharacter = [
     {
@@ -105,6 +106,28 @@ const createInputToGetSingleCharacter = [
         maximumValue: 286,
     }
 ]
+const createGenerationsToBuildForm = [
+    {
+        name: "generation-i",
+        url: "https://pokeapi.co/api/v2/generation/1/"
+    },
+    {
+        name: "generation-ii",
+        url: "https://pokeapi.co/api/v2/generation/2/"
+    },
+    {
+        name: "generation-iii",
+        url: "https://pokeapi.co/api/v2/generation/3/"
+    },
+    {
+        name: "generation-iv",
+        url: "https://pokeapi.co/api/v2/generation/4/"
+    },
+    {
+        name: "generation-v",
+        url: "https://pokeapi.co/api/v2/generation/5/"
+    },
+]
 
 export {
     createMyProjectTitle,
@@ -116,5 +139,6 @@ export {
     createItemsToBuildNavbar,
     createPagesPosition,
     createInputToFindCharacter,
-    createInputToGetSingleCharacter
+    createInputToGetSingleCharacter,
+    createGenerationsToBuildForm
 }
