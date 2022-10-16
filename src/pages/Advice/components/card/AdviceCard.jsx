@@ -1,9 +1,8 @@
 import Icon from '../../../../components/ui/icon/Icon'
-import { createListOfCardsApi } from '../../../../data/constants'
 import styles from './style.module.css'
 
 function AdviceCard (props) {
-    console.log(props)
+    
     const advice = {
         id: props.advice.slip?.id || 'Not Found ID from Advice',
         text: props.advice.slip?.advice || 'Not Found Text of Advice',
