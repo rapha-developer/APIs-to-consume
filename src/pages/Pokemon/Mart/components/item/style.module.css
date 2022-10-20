@@ -1,0 +1,51 @@
+.pokeItem {
+    --gap: 24px;
+    display: grid;
+    grid-gap: var(--gap);
+    justify-items: center;
+
+    padding: var(--spc__scale--6);
+    background: hsla(var(--clr__neutral--100));
+    box-shadow: 10px 20px 50px rgb(var(--bg__card--100) / 15%);
+    border-radius: var(--spc__scale--6);
+}
+@media screen and (min-width: 768px) {
+    .pokeItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.pokeItem__image {
+    width: 50px;
+    height: 50px;
+}
+.pokeItem__info {
+    --gap: 16px;
+    display: grid;
+    grid-gap: var(--gap);
+}
+.pokeItem__name {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--h4);
+    font-weight: var(--fw__medium);
+    color: hsla(var(--clr__neutral--800));
+}
+@media screen and (min-width: 768px) {
+    .pokeItem__info {
+        --gap: 12px;
+        display: flex;
+        align-items: center;
+        gap: var(--gap);
+    }
+    .pokeItem__name {
+        margin-right: var(--spc__scale--6);
+    }
+}
+.pokeItem__price {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--p2);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__neutral--600));
+    text-align: center;
+}
