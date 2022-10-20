@@ -1,0 +1,50 @@
+
+.pokeMart {
+    padding-block: var(--spc__scale--10);
+    min-height: 815px;
+    position: relative;
+}
+.pokeMart__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.__row {
+    --gap: 32px;
+    display: grid;
+    grid-gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+    .__row {
+        --gap: 24px;
+        grid-template-columns: 240px auto;
+    }
+}
+.__col {
+    position: relative;
+    height: 100px;
+}
+@media screen and (min-width: 900px) {
+    .__row {
+        grid-template-columns: 340px auto;
+        justify-content: space-between;
+    }
+}
+.__columnWithItems {
+    background: hsla(var(--bg__icon--100));
+    padding: var(--spc__scale--14) var(--spc__scale--5);
+    border-radius: 30px;
+    width: min(600px, 100%);
+}
+@media screen and (min-width: 1200px) {
+    .__columnWithItems {
+        width: 800px;
+    }
+}
+
+.pokeMart__list {
+    --gap: 24px;
+    display: grid;
+    grid-gap: var(--gap);
+}
