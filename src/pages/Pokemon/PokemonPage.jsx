@@ -5,6 +5,7 @@ import HeroPokemon from './Hero/HeroPokemon'
 import PokeMart from './Mart/PokeMart'
 import { createPokeBallsToPokeMart } from '../../data/constants'
 import styles from './style.module.css'
+import PokeMartHero from './Mart/components/hero/PokeMartHero'
 function PokemonPage() {
     const [collectPokemon, setCollectPokemon] = useState([])
     const collectResponseFromGenerationUrl = (response) => {
@@ -18,7 +19,10 @@ function PokemonPage() {
         <div className="pokemonPage">
             <HeroPokemon collectResponse={collectResponseFromGenerationUrl} />
             {showAllPokemon && <AllPokemon pokemon={collectPokemon}/>}
-            <PokeMart items={createPokeBallsToPokeMart}/>
+            <PokeMartHero
+                title='Welcome to PokeMart-PokeBalls'
+                product='PokeBalls'
+                items={createPokeBallsToPokeMart} />
         </div>
     )
 }
