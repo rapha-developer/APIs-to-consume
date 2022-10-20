@@ -10,7 +10,7 @@ function PokeMartHero(props) {
         items: props?.items || []
     }
     return (
-        <div className={styles.pokeHero}>
+        <section className={styles.pokeHero}>
             <div className={`container 
             ${styles.pokeHero__content}`}>
                 <img src={RectangleWithCurveSvg} 
@@ -23,7 +23,7 @@ function PokeMartHero(props) {
                 </div>
             </div>
             <PokeMart items={pokeHero.items}/>
-        </div>
+        </section>
     )
 }
 export default PokeMartHero

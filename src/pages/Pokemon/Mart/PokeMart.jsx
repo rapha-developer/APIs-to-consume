@@ -50,7 +50,7 @@ function PokeMart(props) {
         )
     })
 	return (
-		<section className={styles.pokeMart}>
+		<div className={styles.pokeMart}>
 			<img
 				src={pokeMartSvg}
 				alt="PokeMart from Nintendo Pokemon Game"
@@ -69,7 +69,7 @@ function PokeMart(props) {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }
 export default PokeMart;
