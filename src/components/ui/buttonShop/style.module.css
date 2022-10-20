@@ -1,0 +1,28 @@
+.pokeItem__buy {
+    --gap: 12px;
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+.pokeItem__amount {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--p2);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__neutral--800));
+}
+.btn {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__medium);
+    color: hsla(var(--clr__neutral--800));
+    padding: var(--space__base) var(--spc__scale--4);
+    max-height: 60px;
+    border-radius: var(--space__base);
+    cursor: pointer;
+}
+.btn__decrease {
+    background: hsla(var(--bg__icon--300));
+}
+.btn__increase {
+    background: hsla(var(--bg__icon--400));
+}
