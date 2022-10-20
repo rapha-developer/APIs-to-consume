@@ -1,0 +1,53 @@
+.pokeLetreiro {
+    background: hsla(var(--clr__neutral--100));
+    padding: var(--spc__scale--4) var(--spc__scale--4);
+    border-width: 6px;
+    border-color: hsla(var(--clr__primary--100));
+    border-style: solid solid none none;
+    border-radius: var(--spc__scale--6);
+    width: min(235px, 100%);
+    transform: rotate(-10deg);
+    justify-items: end;
+
+    --gap: 12px;
+    display: grid;
+    grid-gap: var(--gap);
+    position: relative;
+}
+@media screen and (min-width: 900px) {
+    .pokeLetreiro {
+        width: min(315px, 100%);
+    }
+}
+.pokeLetreiro__sino {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    content: '';
+    background: hsla(var(--clr__primary--100));
+    height: 60px;
+    width: 30px;
+    border-radius: 0 0 7px 7px;
+}
+.pokeLetreiro__circle {
+    position: absolute;
+    top: 32px;
+    left: 25px;
+    content: '';
+    border-radius: 50%;
+    background: hsla(var(--bg__icon--200));
+    width: 20px;
+    height: 20px;
+}
+.pokeLetreiro__title {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--h3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--500));
+}
+.pokeLetreiro__balance {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p1);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__primary--100));
+}
