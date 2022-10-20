@@ -1,0 +1,45 @@
+.pokeHero {
+    padding-block: var(--spc__scale--24);
+    background: linear-gradient(120deg, rgba(156, 194, 249, 0) 1.63%, #F1F6FD 20.5%, hsla(var(--clr__neutral--100)) 35.57%, #F1F6FD 95%, hsla(var(--clr__neutral--100)) 100%);
+    
+    position: relative;
+}
+.pokeHero__content {
+    position: relative;
+    margin-bottom: var(--spc__scale--12);;
+}
+.bgRectangleWithCurve {
+    --width: 178px;
+    --height: 178px;
+    --top: -20px;
+    --left: -16px;
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    width: var(--width);
+    height: var(--height);
+    z-index: 1;
+}
+.pokeHero__info {
+    --gap: var(--spc__scale--4);
+    display: grid;
+    grid-gap: var(--gap);
+    position: relative;
+    z-index: 2;
+}
+.pokeHero__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h2);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.pokeHero__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    width: min(475px, 100%);
+}
+.pokeHero__description span {
+    font-weight: var(--fw__semiBold);
+}
