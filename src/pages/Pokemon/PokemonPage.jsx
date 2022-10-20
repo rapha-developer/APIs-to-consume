@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import AllPokemon from './components/all/AllPokemon'
 import HeroPokemon from './Hero/HeroPokemon'
+import PokeMart from './Mart/PokeMart'
+import { createPokeBallsToPokeMart } from '../../data/constants'
 import styles from './style.module.css'
 function PokemonPage() {
     const [collectPokemon, setCollectPokemon] = useState([])
@@ -16,6 +18,7 @@ function PokemonPage() {
         <div className="pokemonPage">
             <HeroPokemon collectResponse={collectResponseFromGenerationUrl} />
             {showAllPokemon && <AllPokemon pokemon={collectPokemon}/>}
+            <PokeMart items={createPokeBallsToPokeMart}/>
         </div>
     )
 }
