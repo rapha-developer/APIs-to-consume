@@ -128,7 +128,33 @@ const createGenerationsToBuildForm = [
         url: "https://pokeapi.co/api/v2/generation/5/"
     },
 ]
-
+const createPokeBallsToPokeMart = [
+    {
+        name: "master-ball",
+        url: "https://pokeapi.co/api/v2/item/1/",
+        price: 900,
+    },
+    {
+        name: "ultra-ball",
+        url: "https://pokeapi.co/api/v2/item/2/",
+        price: 800,
+    },
+    {
+        name: "great-ball",
+        url: "https://pokeapi.co/api/v2/item/3/",
+        price: 600,
+    },
+    {
+        name: "poke-ball",
+        url: "https://pokeapi.co/api/v2/item/4/",
+        price: 300,
+    },
+    {
+        name: "safari-ball",
+        url: "https://pokeapi.co/api/v2/item/5/",
+        price: 100,
+    },
+]
 export {
     createMyProjectTitle,
     createListOfCompanies,
@@ -140,5 +166,6 @@ export {
     createPagesPosition,
     createInputToFindCharacter,
     createInputToGetSingleCharacter,
-    createGenerationsToBuildForm
+    createGenerationsToBuildForm,
+    createPokeBallsToPokeMart
 }
