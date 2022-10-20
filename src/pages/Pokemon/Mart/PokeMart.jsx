@@ -56,7 +56,8 @@ function PokeMart(props) {
 				alt="PokeMart from Nintendo Pokemon Game"
 				className={styles.pokeMart__bg}
 			/>
-			<div className="container">
+			<div className={`container 
+                        ${styles.pokeMart__content}`}>
 				<div className={styles.__row}>
 					<div className={styles.__col}>
                         <PokeLetreiro balance={balance} />
