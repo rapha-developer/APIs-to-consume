@@ -1,5 +1,5 @@
 
-import PokeTimelineItem from './components/timelineItem/PokeTimelineItem';
+import PokeTimelineItem from './components/item/PokeTimelineItem';
 import styles from './style.module.css'
 function PokeTimeline(props) {
     const timeline = {
