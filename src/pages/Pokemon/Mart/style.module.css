@@ -1,7 +1,6 @@
 
 .pokeMart {
     padding-block: var(--spc__scale--10);
-    min-height: 815px;
     position: relative;
 }
 .pokeMart__bg {
