@@ -1,0 +1,21 @@
+.pokeSingle {
+    background: hsla(var(--clr__neutral--100));
+    padding: var(--spc__scale--12) var(--spc__scale--6);
+    width: min(550px, 100%);
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+
+    --gap: 45px;
+    display: grid;
+    grid-gap: var(--gap);
+}
+.pokeSingle__head {
+    --gap: 32px;
+    display: grid;
+    grid-gap: var(--gap);
+}
+.pokeSingle__body {
+    --gap: 40px;
+    display: grid;
+    grid-gap: var(--gap);
+}
