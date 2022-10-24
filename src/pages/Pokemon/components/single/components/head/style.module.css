@@ -1,0 +1,25 @@
+.headHero {
+    --gap: 12px;
+    display: grid;
+    grid-gap: var(--gap);
+}
+.headHero__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h3);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.headHero__line {
+    width: 100%;
+    border: 2px solid hsla(var(--bg__icon--100));
+    border-radius: 5px;
+}
+.headHero__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p2);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+}
+.headHero__title span {
+    color: hsla(var(--clr__primary--100));
+}
