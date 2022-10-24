@@ -1,0 +1,25 @@
+.notFound {
+    position: relative;
+    width: 100%;
+    height: min(650px, 100%);
+    background: hsla(var(--clr__neutral--100));
+    padding: var(--spc__scale--15) var(--spc__scale--5);
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 14px;
+
+    display: grid;
+    justify-items: center;
+}
+.notFound__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h3);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+    width: min(400px, 100%);
+    text-align: center;
+}
+.notFound__bg {
+    width: min(500px, 100%);
+    height: min(500px, 100%);
+    margin-inline: auto;
+}
