@@ -1,5 +1,5 @@
 .pokeHero {
-    padding-block: var(--spc__scale--24);
+    padding-top: var(--spc__scale--24);
     background: linear-gradient(120deg, rgba(156, 194, 249, 0) 1.63%, #F1F6FD 20.5%, hsla(var(--clr__neutral--100)) 35.57%, #F1F6FD 95%, hsla(var(--clr__neutral--100)) 100%);
     
     position: relative;
