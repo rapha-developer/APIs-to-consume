@@ -1,0 +1,72 @@
+.timelines {
+	--gap: 50px;
+	display: grid;
+	grid-gap: var(--gap);
+	position: relative;
+}
+.vertical__line {
+	position: absolute;
+	top: 30px;
+	bottom: 30px;
+	left: 32px;
+	width: 1px;
+	background: hsla(var(--clr__accent--300));
+}
+
+.pokeSingle__sticker {
+	position: absolute;
+	top: 15%;
+	right: 0;
+	width: 256px;
+	height: 256px;
+	opacity: 1;
+	transform: translateY(0px);
+	transition: all 0.4s ease-in;
+}
+.sticker__wrapperBackground {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	background: hsla(var(--bg__icon--100));
+	border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+	overflow: hidden;
+	animation: morph 3s linear infinite;
+}
+@keyframes morph {
+	0%,
+	100% {
+		border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+	}
+	34% {
+		border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+	}
+	67% {
+		border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+	}
+}
+.pokeSingle__photo {
+	width: inherit;
+	height: inherit;
+}
+
+@media screen and (max-width: 500px) {
+	.pokeSingle__sticker {
+		top: 30%;
+		width: 192px;
+		height: 192px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.pokeSingle__sticker {
+		top: 30%;
+		width: 128px;
+		height: 128px;
+	}
+}
+@media screen and (min-width: 820px) and (max-width: 920px) {
+	.pokeSingle__sticker {
+		transform: translateY(-15px);
+		opacity: 0;
+	}
+}
