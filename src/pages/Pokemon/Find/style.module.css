@@ -1,0 +1,39 @@
+
+.findPokemon {
+    position: relative;
+    min-height: 700px;
+    padding-block: var(--spc__scale--20);
+}
+.findPokemon__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.__row {    
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+@media screen and (max-width: 820px) {
+    .__row > * {    
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+}
+@media screen and (min-width: 820px) {
+    .__row {
+        --gap: 30px;
+        display: grid;
+        grid-gap: var(--gap);
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    }
+    .__firstColumn {
+        display: grid;
+        align-items: center;
+    }
+}
