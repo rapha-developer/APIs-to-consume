@@ -1,0 +1,19 @@
+.heroWithForm {
+    --gap: var(--spc__scale--4);
+    display: grid;
+    grid-gap: var(--gap);
+}
+.heroWithForm__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h1);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.heroWithForm__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    width: min(500px, 100%);
+    margin-bottom: var(--spc__scale--10);
+}
