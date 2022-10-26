@@ -1,0 +1,19 @@
+.exploreItems {
+    padding-block: var(--spc__scale--15) var(--spc__scale--26);
+}
+.__row {
+    --gap: var(--spc__scale--10);
+    display: grid;
+    grid-gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+    .__row {
+        --min__width: 325px;
+        grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
+    }
+    .__columnMain {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+}
