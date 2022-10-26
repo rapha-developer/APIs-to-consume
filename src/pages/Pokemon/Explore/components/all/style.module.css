@@ -1,0 +1,22 @@
+.allItems {
+    padding-block: var(--spc__scale--15);
+    background: hsla(var(--clr__neutral--200));
+}
+.allItems__header {
+    --gap: 12px;
+    display: grid;
+    grid-gap: var(--gap);
+    margin-bottom: var(--spc__scale--15);
+}
+.allItems__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h2);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.allItems__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+}
