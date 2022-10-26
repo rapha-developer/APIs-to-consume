@@ -1,77 +1,10 @@
+
+import { createItemsToBuildFooter } from '../../data/constants'
 import logo from '../../assets/logo-min.svg'
 import styles from './style.module.css'
 
 function Footer() {
-    const footerItems = [
-        {
-            title: 'What We Do',
-            items: [
-                {
-                    label: 'Web Design',
-                    url: '#'
-                },
-                {
-                    label: 'App Design',
-                    url: '#'
-                },
-                {
-                    label: 'Social Media Manage',
-                    url: '#'
-                },
-                {
-                    label: 'Market Analysis Project',
-                    url: '#'
-                }
-            ]
-        },
-        {
-            title: 'Company',
-            items: [
-                {
-                    label: 'About Us',
-                    url: '#'
-                },
-                {
-                    label: 'Career',
-                    url: '#'
-                },
-                {
-                    label: 'Become Investor',
-                    url: '#'
-                }
-            ]
-        },
-        {
-            title: 'Support',
-            items: [
-                {
-                    label: 'FAQ',
-                    url: '#'
-                },
-                {
-                    label: 'Policy',
-                    url: '#'
-                },
-                {
-                    label: 'Business',
-                    url: '#'
-                }
-            ]
-        },
-        {
-            title: 'Contact',
-            items: [
-                {
-                    label: 'WhatsApp',
-                    url: '#'
-                },
-                {
-                    label: 'Support 24',
-                    url: '#'
-                }
-            ]
-        }
-    ]
+    const footerItems = createItemsToBuildFooter
     const footerMenus = footerItems.map((footerItem, key) => {
         return (
             <div className={styles.footer__group} key={key}>
