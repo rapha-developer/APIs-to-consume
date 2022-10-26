@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import AllPokemon from './components/all/AllPokemon'
 import HeroPokemon from './Hero/HeroPokemon'
-import PokeMart from './Mart/PokeMart'
 import { createPokeBallsToPokeMart } from '../../data/constants'
 import styles from './style.module.css'
 import PokeMartHero from './Mart/components/hero/PokeMartHero'
