@@ -1,6 +1,5 @@
 
-import { createItemsByCategoryMedicine,
-        createItemsByCategoryBerries } from '../../../../data/constants'
+import { createItemsToBuildMapOfOptions } from '../../../../data/constants'
 import ItemsForm from "./components/form/ItemsForm";
 import styles from "./style.module.css";
 function HeroWithForm(props) {
@@ -11,17 +10,8 @@ function HeroWithForm(props) {
         options: collectItemsToBuildOptions(props?.type || 'medicine')
     }
     function collectItemsToBuildOptions(nameType) {
-        const types = [
-            {
-                name: 'medicine', 
-                options: createItemsByCategoryMedicine
-            },
-            {
-                name: 'berries',
-                options: createItemsByCategoryBerries
-            }
-        ];
-        const typeFound = types.find((type) => nameType === type.name)
+        const mapOfOptions = createItemsToBuildMapOfOptions
+        const typeFound = mapOfOptions.find((item) => nameType === item.type)
         return typeFound.options
     }
 	return (
