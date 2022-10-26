@@ -1,0 +1,6 @@
+.option:hover,
+.option {
+    background-color: hsla(var(--clr__neutral--200));
+    font-size: var(--scale--p1);
+    margin-block: var(--spc__scale--3);
+}
