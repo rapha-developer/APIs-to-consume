@@ -4,11 +4,13 @@
     height: min(650px, 100%);
     background: hsla(var(--clr__neutral--100));
     padding: var(--spc__scale--15) var(--spc__scale--5);
-    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 14px;
 
     display: grid;
     justify-items: center;
+}
+.notFound[data-shadow="yes"] {
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
 }
 .notFound__title {
     font-family: var(--ff__Nunito, sans-serif);
