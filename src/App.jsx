@@ -7,8 +7,12 @@ import Footer from './components/footer/Footer'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import RickPage from './pages/RickyMorty/RickPage'
-import { createItemsToBuildNavbar, createPagesPosition } from './data/constants'
+import { 
+      createItemsToBuildNavbar, 
+      createItemsToBuildFooter,
+      createPagesPosition } from './data/constants'
 import PokemonPage from './pages/Pokemon/PokemonPage'
+import PokeExplorePage from './pages/Pokemon/pages/explore/PokeExplorePage'
 function App() {
 
   return (
@@ -23,6 +27,10 @@ function App() {
               element={<RickPage />} />
         <Route path={createItemsToBuildNavbar[createPagesPosition.fourth].url}
               element={<PokemonPage />} />
+        <Route path={createItemsToBuildFooter[createPagesPosition.first].items[createPagesPosition.first].url}
+              element={<PokeExplorePage />} /> 
+        <Route path={createItemsToBuildFooter[createPagesPosition.first].items[createPagesPosition.second].url}
+            element={<PokeExplorePage type='berries'/>} />
       </Routes>
       <Footer />
     </div>
