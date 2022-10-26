@@ -1,5 +1,5 @@
 .allItems {
-    padding-block: var(--spc__scale--15);
+    padding-block: var(--spc__scale--20) var(--spc__scale--26);
     background: hsla(var(--clr__neutral--200));
 }
 .allItems__header {
