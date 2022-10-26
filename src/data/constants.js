@@ -92,20 +92,20 @@ const createItemsToBuildFooter = [
 		title: "Poke fun",
 		items: [
 			{
-				label: "Medicine items",
-				url: "/find-medicine-items",
+				label: "Misc items",
+				url: "/find-misc-items",
+			},
+			{
+				label: "Battle items",
+				url: "/find-battle-items",
 			},
 			{
 				label: "Berries items",
 				url: "/find-berry-items",
 			},
 			{
-				label: "Social Media Manage",
-				url: "#",
-			},
-			{
-				label: "Market Analysis Project",
-				url: "#",
+				label: "Medicine items",
+				url: "/find-medicine-items",
 			},
 		],
 	},
@@ -285,6 +285,76 @@ const createItemsByCategoryBerries = [
 		url: "https://pokeapi.co/api/v2/item-category/8/",
 	},
 ];
+const createItemsByCategoryBattle = [
+	{
+		name: "stat-boosts",
+		url: "https://pokeapi.co/api/v2/item-category/1/",
+	},
+	{
+		name: "flutes",
+		url: "https://pokeapi.co/api/v2/item-category/38/",
+	},
+];
+const createItemsByCategoryMisc = [
+	{
+		name: "evolution",
+		url: "https://pokeapi.co/api/v2/item-category/10/",
+	},
+	{
+		name: "spelunking",
+		url: "https://pokeapi.co/api/v2/item-category/11/",
+	},
+	{
+		name: "choice",
+		url: "https://pokeapi.co/api/v2/item-category/13/",
+	},
+	{
+		name: "effort-training",
+		url: "https://pokeapi.co/api/v2/item-category/14/",
+	},
+	{
+		name: "bad-held-items",
+		url: "https://pokeapi.co/api/v2/item-category/15/",
+	},
+	{
+		name: "training",
+		url: "https://pokeapi.co/api/v2/item-category/16/",
+	},
+	{
+		name: "plates",
+		url: "https://pokeapi.co/api/v2/item-category/17/",
+	},
+	{
+		name: "type-enhancement",
+		url: "https://pokeapi.co/api/v2/item-category/19/",
+	},
+	{
+		name: "scarves",
+		url: "https://pokeapi.co/api/v2/item-category/36/",
+	},
+	{
+		name: "jewels",
+		url: "https://pokeapi.co/api/v2/item-category/42/",
+	},
+];
+const createItemsToBuildMapOfOptions = [
+	{
+		type: 'misc',
+		options: createItemsByCategoryMisc
+	},
+	{
+		type: 'battle',
+		options: createItemsByCategoryBattle
+	},
+	{
+		type: 'berries',
+		options: createItemsByCategoryBerries
+	},
+	{
+		type: 'medicine', 
+		options: createItemsByCategoryMedicine
+	},
+];
 export {
 	createMyProjectTitle,
 	createListOfCompanies,
@@ -301,4 +371,7 @@ export {
 	createPokeBallsToPokeMart,
 	createItemsByCategoryMedicine,
 	createItemsByCategoryBerries,
+	createItemsByCategoryBattle,
+	createItemsByCategoryMisc,
+	createItemsToBuildMapOfOptions
 };
