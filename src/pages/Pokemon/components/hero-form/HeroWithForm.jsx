@@ -16,12 +16,13 @@ function HeroWithForm(props) {
     }
 	return (
 		<div className={styles.heroWithForm}>
-			<h1 className={styles.heroWithForm__title}>{HeroForm.title}</h1>
+			<h1 className={`${styles.heroWithForm__title} capitalize`}>{HeroForm.title}</h1>
 			<p className={styles.heroWithForm__description}>
 				{HeroForm.description}
 			</p>
 			<ItemsForm 
                 type={HeroForm.type}
+                label={`Find Poke items by ${HeroForm.type} category`}
                 options={HeroForm.options}
                 collectItems={props.collectResponse} 
                 collectErrors={props.collectErrors}
