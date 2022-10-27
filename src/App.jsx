@@ -11,7 +11,8 @@ import {
 	createItemsToBuildNavbar,
 	createItemsToBuildFooter,
 	createPagesPosition,
-	createItemsToBuildMapOfOptions
+	createItemsToBuildMapOfOptions,
+	createItemsToBuildStoreOfPokeMart
 } from "./data/constants";
 import PokemonPage from "./pages/Pokemon/PokemonPage";
 import PokeExplorePage from "./pages/Pokemon/pages/explore/PokeExplorePage";
@@ -46,18 +47,26 @@ function App() {
 					path={createItemsToBuildFooter[createPagesPosition.first]
 							.items[createPagesPosition.second].url}
 					element={<PokeExplorePage 
-					type={createItemsToBuildMapOfOptions[createPagesPosition.second].type} />}
+								type={createItemsToBuildMapOfOptions[createPagesPosition.second].type}
+								showPokeMart={true} 
+								product={createItemsToBuildStoreOfPokeMart[createPagesPosition.second].product}
+							/>}
 				/>
 				<Route
 					path={createItemsToBuildFooter[createPagesPosition.first]
 							.items[createPagesPosition.third].url}
 					element={<PokeExplorePage 
-					type={createItemsToBuildMapOfOptions[createPagesPosition.third].type} />}
+								type={createItemsToBuildMapOfOptions[createPagesPosition.third].type} 
+							/>}
 				/>
 				<Route
 					path={createItemsToBuildFooter[createPagesPosition.first]
 							.items[createPagesPosition.fourth].url}
-					element={<PokeExplorePage />}
+					element={<PokeExplorePage 
+								showPokeMart={true} 
+								product={createItemsToBuildStoreOfPokeMart[createPagesPosition.third].product}
+								type={createItemsToBuildMapOfOptions[createPagesPosition.fourth].type} 
+							/>}
 				/>
 			</Routes>
 			<Footer />
