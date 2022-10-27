@@ -35,7 +35,7 @@ function PokeMart(props) {
     }
     const poke__items = pokeItems.map((pokeItem) => {
         const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dream-world/${pokeItem.name}.png`
-        const nameWithoutTrace = pokeItem.name.replace('-', '')
+        const nameWithoutTrace = pokeItem.name.replaceAll('-', ' ')
         const foundItem = pokeShop.find((item) => item.name === pokeItem.name)
         
         return (

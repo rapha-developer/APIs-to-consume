@@ -5,13 +5,16 @@ import PokeHeadHero from './components/head/PokeHeadHero';
 import styles from './style.module.css'
 function PokeSingle(props) {
 	const pokeSingle = {
-		name: props.pokemon.name,
+		name: collectNameWithoutTrace(props.pokemon.name),
 		description: collectFlavorText(props.pokemon),
 		url: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${props.pokemon.id}.png`,
 		color: props?.pokemon?.color?.name || "Not found color in props",
 		attributes: collectAttributes(props.pokemon) || [],
 		varieties: props.pokemon.varieties || [],
 	};
+	function collectNameWithoutTrace(name) {
+		return name.replaceAll('-', ' ')
+	}
 	function collectFlavorText(pokemon) {
 		const firstFlavorText = 0;
 		filterDescription(pokemon.flavor_text_entries)

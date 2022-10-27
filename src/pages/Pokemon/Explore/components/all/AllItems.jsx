@@ -20,9 +20,10 @@ function AllItems(props) {
             .then(allItems => setItems(allItems))
             .catch(error => alert('itemPromises not working' + error))
     }
+	const nameWithoutTrace = pokeList.name.replaceAll('-', ' ');
     const allItemsHero = {
-		title: `${pokeList.size} Poke items found in this ${pokeList.name} category`,
-		description: `Uma lista de ${pokeList.size} Poke items foram encontrados nesta ${pokeList.name} categoria`
+		title: `${pokeList.size} Poke items found in this { ${nameWithoutTrace} } category`,
+		description: `Uma lista de ${pokeList.size} Poke items foram encontrados nesta { ${nameWithoutTrace} } categoria`
 	}
 	return (
 		<div className={styles.allItems}>
