@@ -233,6 +233,85 @@ const createPokeBallsToPokeMart = [
 		price: 100,
 	},
 ];
+const createPotionsToPokeMart = [
+	{
+		name: "full-restore",
+		url: "https://pokeapi.co/api/v2/item/23/",
+		price: 900,
+	},
+	{
+		name: "max-potion",
+		url: "https://pokeapi.co/api/v2/item/24/",
+		price: 700,
+	},
+	{
+		name: "hyper-potion",
+		url: "https://pokeapi.co/api/v2/item/25/",
+		price: 500,
+	},
+	{
+		name: "super-potion",
+		url: "https://pokeapi.co/api/v2/item/26/",
+		price: 300,
+	},
+	{
+		name: "moomoo-milk",
+		url: "https://pokeapi.co/api/v2/item/33/",
+		price: 200,
+	},
+	{
+		name: "potion",
+		url: "https://pokeapi.co/api/v2/item/17/",
+		price: 100,
+	},
+
+];
+const createHeldItemsToPokeMart = [
+	{
+		name: "muscle-band",
+		url: "https://pokeapi.co/api/v2/item/243/",
+		price: 900,
+	},
+	{
+		name: "focus-band",
+		url: "https://pokeapi.co/api/v2/item/207/",
+		price: 700,
+	},
+	{
+		name: "wise-glasses",
+		url: "https://pokeapi.co/api/v2/item/244/",
+		price: 550,
+	},
+	{
+		name: "rocky-helmet",
+		url: "https://pokeapi.co/api/v2/item/583/",
+		price: 450,
+	},
+	{
+		name: "float-stone",
+		url: "https://pokeapi.co/api/v2/item/582/",
+		price: 200,
+	},
+	{
+		name: "air-balloon",
+		url: "https://pokeapi.co/api/v2/item/584/",
+		price: 100,
+	}
+];
+const createItemsToBuildStoreOfPokeMart = [
+	{
+		product: "PokeBalls",
+		items: createPokeBallsToPokeMart,
+	},
+	{
+		product: "Potions",
+		items: createPotionsToPokeMart,
+	},
+	{
+		product: "HeldItems",
+		items: createHeldItemsToPokeMart,
+	},
+]
 const createItemsByCategoryMedicine = [
 	{
 		name: "vitamins",
@@ -339,20 +418,20 @@ const createItemsByCategoryMisc = [
 ];
 const createItemsToBuildMapOfOptions = [
 	{
-		type: 'misc',
-		options: createItemsByCategoryMisc
+		type: "Miscellaneous",
+		options: createItemsByCategoryMisc,
 	},
 	{
-		type: 'battle',
-		options: createItemsByCategoryBattle
+		type: "battle",
+		options: createItemsByCategoryBattle,
 	},
 	{
-		type: 'berries',
-		options: createItemsByCategoryBerries
+		type: "berries",
+		options: createItemsByCategoryBerries,
 	},
 	{
-		type: 'medicine', 
-		options: createItemsByCategoryMedicine
+		type: "medicine",
+		options: createItemsByCategoryMedicine,
 	},
 ];
 export {
@@ -369,9 +448,12 @@ export {
 	createInputToGetSingleCharacter,
 	createGenerationsToBuildForm,
 	createPokeBallsToPokeMart,
+	createPotionsToPokeMart,
+	createHeldItemsToPokeMart,
+	createItemsToBuildStoreOfPokeMart,
 	createItemsByCategoryMedicine,
 	createItemsByCategoryBerries,
 	createItemsByCategoryBattle,
 	createItemsByCategoryMisc,
-	createItemsToBuildMapOfOptions
+	createItemsToBuildMapOfOptions,
 };
