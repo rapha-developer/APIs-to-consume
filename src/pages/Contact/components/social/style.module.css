@@ -1,0 +1,5 @@
+.contact__social {
+    --gap: var(--spc__scale--4);
+    display: grid;
+    grid-gap: var(--gap);
+}
