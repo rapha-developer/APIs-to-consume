@@ -5,35 +5,37 @@
     border-top: 1px solid #E4E4E4;
     padding-top: var(--spc__scale--15);
 }
+.__row {
+    --gap: var(--spc__scale--10);
+    display: grid;
+    grid-gap: var(--gap);
+}
 .__firstColumn {
     --gap: 24px;
     display: grid;
     grid-gap: var(--gap);
 }
-.footer__description {
+.footer__hero {
     font-family: var(--ff__firaSans, sans-serif);
     font-size: var(--scale--h6);
     font-weight: var(--fw__regular);
     width: min(270px, 100%);
     color: hsla(var(--clr__neutral--600));
 }
-.__row {
-    --gap: var(--spc__scale--10);
-    display: grid;
-    grid-gap: var(--gap);
-}
 .__footerColumns {
+    --min__width: 100px;
     --gap: var(--spc__scale--15);
     display: grid;
     grid-gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
+
     justify-items: baseline;
 }
 @media screen and (min-width: 568px) {
     .__footerColumns {
+        --min__width: 120px;
         --gap: var(--spc__scale--10);
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        grid-gap: var(--gap);
     }
 }
 @media screen and (min-width: 1000px) {
@@ -41,36 +43,9 @@
         --gap: var(--spc__scale--20);
         display: grid;
         grid-template-columns: 270px auto;
-        grid-gap: var(--gap);
     }
     .__footerColumns {
         margin-top: var(--spc__scale--2);
         justify-items: center;
     }
-}
-.footer__groupTitle {
-    font-family: var(--ff__Nunito, sans-serif);
-    font-size: var(--scale--h5);
-    font-weight: var(--fw__bold);
-    color: hsla(var(--clr__neutral--800));
-
-    margin-bottom: var(--spc__scale--6);
-}
-.footer__groupList {
-    --gap: 16px;
-    display: grid;
-    grid-gap: var(--gap);
-}
-.footer__link {
-    font-family: var(--ff__Jost, sans-serif);
-    font-size: var(--scale--p4);
-    font-weight: var(--fw__regular);
-    color: hsla(var(--clr__neutral--600));
-    transition: all 0.3s ease-in;
-}
-.footer__link:focus,
-.footer__link:hover {
-    color: hsla(var(--clr__primary--100));
-    transform: scale(1.2);
-    text-decoration: underline;
 }

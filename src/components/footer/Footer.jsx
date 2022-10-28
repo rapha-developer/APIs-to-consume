@@ -2,28 +2,23 @@
 import { createItemsToBuildFooter } from '../../data/constants'
 import logo from '../../assets/logo-min.svg'
 import styles from './style.module.css'
+import FooterGroup from './components/group/FooterGroup';
 
-function Footer() {
+function Footer(props) {
     const footerItems = createItemsToBuildFooter
     const footerMenus = footerItems.map((footerItem, key) => {
         return (
-            <div className={styles.footer__group} key={key}>
-                <h5 className={styles.footer__groupTitle}>{footerItem.title}</h5>
-                <ul className={styles.footer__groupList}>
-                    {footerItem.items.map((footerOption, keyOption) => {
-                        return (
-                            <li className={styles.footer__item} key={keyOption}>
-                                <a href={footerOption.url} 
-                                    className={styles.footer__link}>{footerOption.label}</a>
-                            </li>
-                        )
-                    })
-                    }
-                </ul>
-            </div>
+            <FooterGroup 
+                key={key}
+                title={footerItem.title}
+                items={footerItem.items}
+            />
         );
     });
-
+    const footer = {
+        hero: props?.hero || 'Leading digital agency with solid design and development expertise. We build ready made websites, mobile applications, and elaborate online business services.',
+        alt: 'website logo'
+    }   
     return (
         <footer className={styles.footer}>
             <div className={`container ${styles.footer__line}`}>
@@ -31,8 +26,8 @@ function Footer() {
                     <div className={styles.__firstColumn}>
                         <img src={logo}
                             className='logo' 
-                            alt="" />
-                        <h6 className={styles.footer__description}>Leading digital agency with solid design and development expertise. We build ready made websites, mobile applications, and elaborate online business services.</h6>
+                            alt={footer.alt} />
+                        <h6 className={styles.footer__hero}>{footer.hero}</h6>
                     </div>
                     <div className={styles.__footerColumns}>
                         {footerMenus}
