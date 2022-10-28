@@ -1,0 +1,5 @@
+.footer__list {
+    --gap: 16px;
+    display: grid;
+    grid-gap: var(--gap);
+}
