@@ -1,0 +1,8 @@
+.group__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h5);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__neutral--800));
+
+    margin-bottom: var(--spc__scale--6);
+}
