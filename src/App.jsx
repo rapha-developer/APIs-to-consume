@@ -16,6 +16,7 @@ import {
 } from "./data/constants";
 import PokemonPage from "./pages/Pokemon/PokemonPage";
 import PokeExplorePage from "./pages/Pokemon/pages/explore/PokeExplorePage";
+import ContactPage from "./pages/Contact/ContactPage";
 function App() {
 	return (
 		<div className="App">
@@ -36,6 +37,10 @@ function App() {
 				<Route
 					path={createItemsToBuildNavbar[createPagesPosition.fourth].url}
 					element={<PokemonPage />}
+				/>
+				<Route
+					path={createItemsToBuildNavbar[createPagesPosition.fifth].url}
+					element={<ContactPage />}
 				/>
 				<Route
 					path={createItemsToBuildFooter[createPagesPosition.first]
