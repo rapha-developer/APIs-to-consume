@@ -43,7 +43,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.navbar__link:active,
+.navbar__link[data-active="true"],
 .navbar__link:hover,
 .navbar__link:focus {
     color: hsla(var(--clr__primary--100));

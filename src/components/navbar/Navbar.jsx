@@ -1,17 +1,20 @@
 import { useState } from 'react';
 import logo from '../../assets/logo-min.svg'
 import burgerIcon from'../../assets/burger-menu.svg'
+import { useLocation } from 'react-router-dom'
 
 import { createItemsToBuildNavbar } from '../../data/constants'
 import styles from './style.module.css'
-
 function Navbar() {
     const items = createItemsToBuildNavbar
 
     const navbarItems = items.map((navbarItem, key) => {
+        const location = useLocation()
+        const isActive = (navbarItem.url === location.pathname) ? true : false
         return (
             <li className={styles.navbar__item} key={key} >
                 <a href={navbarItem.url} 
+                    data-active={isActive}
                     className={`${styles.navbar__link} capitalize`} >{navbarItem.text}</a>
             </li>
         )
