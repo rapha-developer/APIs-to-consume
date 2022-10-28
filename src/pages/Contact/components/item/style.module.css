@@ -1,0 +1,23 @@
+.contact__item {
+    --gap: var(--spc__scale--4);
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: 24px auto;
+
+    transition: all 0.3s ease-in;
+}
+.contact__image {
+    --width: 24px;
+    --height: 24px;
+    width: var(--width);
+    height: var(--height);
+}
+.contact__link {
+    font-family: var(--ff__Jost, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--500));
+}
+.contact__link:hover {
+    color: hsla(var(--clr__primary--100));
+}
