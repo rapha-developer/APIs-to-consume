@@ -40,7 +40,7 @@ function ContactInfo(props) {
                         </div>
                     </div>
                     <div className={styles.__columnMap}>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.633416382165!2d-46.4548315!3d-23.54478735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66bd1228badd%3A0xd022d94aef1e3ec9!2sItaquera%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1666920796800!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{border:'0'}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58530.8487946734!2d-46.44102251558844!3d-23.526097684934793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1666980326688!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{border:'0'}} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                     </div>
                 </div>
             </div>
