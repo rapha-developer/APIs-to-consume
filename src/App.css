@@ -88,10 +88,6 @@ p {
     --ff__firaSans: Fira Sans;
     --ff__Nunito: Nunito;
     --ff__Jost: Jost;
-	--ff__dmSans--regular: DM Sans Regular;
-	--ff__dmSans--italic: DM Sans Italic;
-	--ff__dmSans--medium: DM Sans Medium;
-	--ff__dmSans--bold: DM Sans Bold;
 
 	--scale--h1: 40px;
 	--scale--h2: 36px;
@@ -125,6 +121,7 @@ p {
     --spc__scale--9: calc(9 * var(--space__base));
     --spc__scale--10: calc(10 * var(--space__base));
     --spc__scale--12: calc(12 * var(--space__base));
+    --spc__scale--13: calc(13 * var(--space__base));
     --spc__scale--14: calc(14 * var(--space__base));
     --spc__scale--15: calc(15 * var(--space__base));
     --spc__scale--20: calc(20 * var(--space__base));
