@@ -1,0 +1,15 @@
+.footer__link {
+    font-family: var(--ff__Jost, sans-serif);
+    font-size: var(--scale--p4);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    transition: all 0.3s ease-in-out;
+}
+.footer__link[data-active="true"],
+.footer__link:focus,
+.footer__link:hover {
+    color: hsla(var(--clr__primary--100));
+    transform: scale(1.2);
+    padding-bottom: var(--space__base);
+    border-bottom: 1px solid hsla(var(--clr__primary--100));
+}
