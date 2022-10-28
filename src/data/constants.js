@@ -84,7 +84,7 @@ const createItemsToBuildNavbar = [
 	},
 	{
 		text: "contact",
-		url: "#",
+		url: "/contact",
 	},
 ];
 const createItemsToBuildFooter = [
@@ -147,16 +147,16 @@ const createItemsToBuildFooter = [
 		title: "Contact",
 		items: [
 			{
-				label: "WhatsApp",
-				url: "#",
+				label: "Behance",
+				url: "https://www.behance.net/rapha-developer",
 			},
 			{
-				label: "Support 24",
-				url: "#",
+				label: "Codepen",
+				url: "https://codepen.io/rapha-developer",
 			},
 			{
-				label: "Facebook",
-				url: "#",
+				label: "Github",
+				url: "https://github.com/rapha-developer",
 			},
 		],
 	},
@@ -166,6 +166,7 @@ const createPagesPosition = {
 	second: 1,
 	third: 2,
 	fourth: 3,
+	fifth: 4,
 };
 const createInputToFindCharacter = [
 	{
@@ -434,6 +435,35 @@ const createItemsToBuildMapOfOptions = [
 		options: createItemsByCategoryMedicine,
 	},
 ];
+const createSocialMediasToContactSocial = {
+	title: 'My Social Medias',
+	data: [
+		{
+			name: 'email',
+			username: "@gmail/contatosraphaelmoreira",
+			url: "mailto:contatosraphaelmoreira@gmail.com",
+			iconUrl: "https://cdn-icons-png.flaticon.com/512/732/732200.png"
+		},
+		{
+			name: 'github',
+			username: "@github/rapha-developer",
+			url: "https://github.com/rapha-developer",
+			iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733609.png"
+		},
+		{
+			name: 'codepen',
+			username: "@codepen.io/rapha-developer",
+			url: "https://codepen.io/rapha-developer",
+			iconUrl: "https://cdn-icons-png.flaticon.com/512/2111/2111501.png"
+		},
+		{
+			name: 'behance',
+			username: "@behance.net/rapha-developer",
+			url: "https://www.behance.net/rapha-developer",
+			iconUrl: "https://cdn-icons-png.flaticon.com/512/145/145799.png"
+		}
+	]
+};
 export {
 	createMyProjectTitle,
 	createListOfCompanies,
@@ -456,4 +486,5 @@ export {
 	createItemsByCategoryBattle,
 	createItemsByCategoryMisc,
 	createItemsToBuildMapOfOptions,
+	createSocialMediasToContactSocial
 };
