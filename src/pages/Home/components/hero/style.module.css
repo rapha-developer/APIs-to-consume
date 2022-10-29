@@ -1,0 +1,18 @@
+
+.homeHero {
+    --min__height: 608px;
+    min-height: var(--min__height);
+
+    position: relative;
+}
+.homeHero__row {
+    --gap: var(--spc__scale--15);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--gap);
+}
+@media screen and (min-width: 1175px) {
+    .homeHero__row {
+        flex-direction: row;
+    }
+}
