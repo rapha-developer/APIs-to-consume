@@ -6,19 +6,25 @@ const createMyProjectTitle = {
 
 const createListOfCompanies = [
 	{
-		svg: "companyTenziesSvg",
+		svg:{
+			url: '/src/assets/myCompanyTenzies.svg',
+			altText: "Tenzies Game Project Logo",
+		},
 		url: "#",
-		altText: "Tenzies Game Project Logo",
 	},
 	{
-		svg: "companyCodepenSvg",
+		svg:{
+			url: '/src/assets/myCompanyCodepen.svg',
+			altText: "Codepen Profile Logo",
+		},
 		url: "#",
-		altText: "Codepen Profile Logo",
 	},
 	{
-		svg: "companyBehanceSvg",
+		svg:{
+			url: '/src/assets/MyCompanyBehance.svg',
+			altText: "Behance Profile Logo",
+		},
 		url: "#",
-		altText: "Behance Profile Logo",
 	},
 ];
 const createListOfCardsApi = [
