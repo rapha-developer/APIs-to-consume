@@ -1,4 +1,4 @@
-import HomeHero from "../Home/components/heroSection/HomeHero"
+import HomeHero from "../Home/components/hero/HomeHero"
 import FindAdvice from "./Find/FindAdvice"
 import RandomAdvice from "./Random/RandomAdvice"
 
