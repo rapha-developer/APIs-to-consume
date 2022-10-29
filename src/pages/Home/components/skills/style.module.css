@@ -1,0 +1,36 @@
+.skills {
+    position: relative;
+    padding-block: var(--spc__scale--20) var(--spc__scale--10);
+}
+.bgRectangleWithCurve {
+    position: absolute;
+    top: -60px;
+    left: -10px;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+.__row {
+    --gap: 35px;
+    display: grid;
+    grid-gap: var(--gap);
+    position: relative;
+}
+@media screen and (min-width: 1060px) {
+    .__row {
+        --gap: 0px;
+        grid-template-columns: 360px 1fr;
+    }
+    .bgRectangleWithCurve {
+        top: 18%;
+        left: -45px;
+    }
+    .__columnMain {
+        display: grid;
+        place-content: center;
+    }
+    .__columnCards {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+}
