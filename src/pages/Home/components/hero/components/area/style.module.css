@@ -1,0 +1,35 @@
+@media screen and (min-width: 1175px) {
+    .__columnHero {
+        padding-top: var(--spc__scale--30);
+    }
+}
+.hero__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h1);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__neutral--800));
+    margin-bottom: var(--spc__scale--10);
+    width: 100%;
+}
+@media screen and (min-width: 1175px) {
+    .hero__title {
+        min-width: 500px;
+    }
+}
+.hero__description {
+    --max__width: 471px;
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    margin-bottom: var(--spc__scale--8);
+    max-width: var(--max__width);
+}
+.hero__grid {
+    --top: -44px;
+    --left: -66px;
+    position: relative;
+    top: var(--top);
+    left: var(--left);
+    z-index: -1;
+}
