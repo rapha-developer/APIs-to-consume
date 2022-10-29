@@ -1,0 +1,41 @@
+.backgroundHero {
+    margin-left: var(--spc__scale--12);
+    display: grid;
+    justify-content: end;
+}
+@media screen and (min-width: 1175px) {
+    .backgroundHero {
+        margin-left: 0px;
+    }
+}
+.backgroundHero__group {
+    width: fit-content;
+    display: grid;
+    position: relative;
+    left: max(1rem, calc(100vw - 1200px));
+}
+@media screen and (min-width: 1175px) {
+    .backgroundHero__group {
+        left: calc(calc(98.8vw - 1200px) / 2); 
+    }
+}
+.hero__bgCircle {
+    --left: 63px;
+    position: absolute;
+    top: 0;
+    left: calc(0% - var(--left));
+    z-index: -1;
+}
+.hero__bgRectangleWithCurve {
+    --bottom: -96px;
+    --min__right: 120px;
+    position: absolute;
+    bottom: var(--bottom);
+    right: min(var(--min__right), 10%);
+    z-index: -1;
+}
+@media screen and (min-width: 1175px) {
+    .hero__bgRectangleWithCurve {
+        --bottom: 0px;
+    }
+}
