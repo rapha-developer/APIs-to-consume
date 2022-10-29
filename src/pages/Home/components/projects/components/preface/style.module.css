@@ -1,0 +1,34 @@
+.preface {
+    --gap: 17px;
+    --max__width: 100%;
+    display: grid;
+    grid-gap: var(--gap);
+    width: 100%;
+    max-width: var(--max__width);
+}
+
+.preface__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h2);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+    text-align: center;
+}
+.preface__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p2);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .preface {
+        --max__width: 375px;
+        grid-column: col 1 / col 3;
+        grid-row: row 1;
+    }
+    .preface__title,
+    .preface__description {
+        text-align: left;
+    }
+}
