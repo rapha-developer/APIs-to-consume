@@ -1,0 +1,17 @@
+.skills__collection {
+    display: grid;
+    grid-gap:  30px;
+    justify-items: center;
+}
+@media screen and (min-width: 625px) {
+    .skills__collection {
+        --min__width: 308px;
+        grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
+        width: min(725px, 100%);
+    }
+}
+@media screen and (min-width: 700px) {
+    .skills__collection > :nth-child(odd) {
+        transform: translateY(64px);
+    }
+}
