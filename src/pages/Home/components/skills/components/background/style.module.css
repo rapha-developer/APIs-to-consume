@@ -1,0 +1,39 @@
+.bgRectangle {
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    height: fit-content;
+    z-index: -1;
+}
+.ellipseCircle {
+    --bottom: -60px;
+    --right: 40px;
+    position: absolute;
+    bottom:var(--bottom);
+    right: var(--right);
+    z-index: -1;
+}
+@media screen and (min-width: 625px) {
+    .bgRectangle {
+        top: 25%;
+        width: 70%;
+    }
+}
+@media screen and (min-width: 700px) {
+    .bgRectangle {
+        top: 40%;
+        width: 90%;
+    }
+    .ellipseCircle {
+        --bottom: -72px;
+    }
+}
+@media screen and (min-width: 1060px) {
+    .bgRectangle {
+        top: 25%;
+        width: 70%;
+    }
+    .ellipseCircle {
+        --right: 54px;
+    }
+}
