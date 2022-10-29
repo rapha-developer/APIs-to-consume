@@ -1,0 +1,21 @@
+
+.MyProjects {
+    padding-block: var(--spc__scale--10);
+}
+.MyProjects__row {
+    --gap: 25px;
+    display: grid;
+    grid-gap: var(--gap);
+}
+
+@media screen and (min-width: 768px) {
+    .MyProjects__row {
+        grid-template-columns: repeat(6, [col] 1fr);
+        grid-template-rows: repeat(2, [row] 150px);
+    }
+}
+@media screen and (min-width: 1160px) {
+    .MyProjects__row {
+        grid-template-rows: repeat(1, [row] 150px);
+    }
+}
