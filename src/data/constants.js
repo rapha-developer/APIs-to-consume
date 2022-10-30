@@ -3,7 +3,6 @@ const createMyProjectTitle = {
 	description:
 		"Several selected clients, who already believe in our service.",
 };
-
 const createListOfCompanies = [
 	{
 		svg:{
@@ -49,6 +48,11 @@ const createListOfCardsApi = [
 		iconType: "chart",
 	},
 ];
+const createGithubProfile = {
+	image: 'https://avatars.githubusercontent.com/u/91702283?v=4',
+	name: 'Raphael M. Developer',
+	bio: 'Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.'
+}
 const createFirstAdvice = {
 	slip: {
 		advice: "Click the button to appear a good advice for you here...",
@@ -474,6 +478,7 @@ export {
 	createMyProjectTitle,
 	createListOfCompanies,
 	createListOfCardsApi,
+	createGithubProfile,
 	createFirstAdvice,
 	createAdviceHero,
 	createInputToFindAdvice,
