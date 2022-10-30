@@ -1,0 +1,41 @@
+.about__avatarColumn {
+    width: fit-content;
+    position: relative;
+}
+.__image {
+    filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+    border-radius: 500px 0px 500px 500px;
+    margin-bottom: var(--spc__scale--10);
+}
+.__ellipseCircle {
+    --bottom: 30px;
+    position: absolute;
+    bottom: var(--bottom);
+    left: 0;
+    z-index: -1;
+}
+.__dots {
+    --top: -42px;
+    --left: 0px;
+    position: absolute;
+    top: var(--top);
+    right: var(--left);
+    z-index: -1;
+}
+@media screen and (min-width: 768px) {
+    .__image {
+        margin-bottom: 0;
+    }
+    .__dots {
+        --top: 20px;
+        --left: -37px;
+    }
+}
+@media screen and (min-width: 1055px) {
+    .__dots {
+        --top: -42px;
+    }
+    .__ellipseCircle {
+        --bottom: 0;
+    }
+}
