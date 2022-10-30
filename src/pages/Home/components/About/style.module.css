@@ -1,50 +1,6 @@
 .aboutUs {
     margin-bottom: var(--spc__scale--20);
 }
-.aboutUs__head {
-    --gap: 17px;
-    display: grid;
-    grid-gap: var(--gap);
-    justify-content: center;
-    margin-bottom: 113px;
-}
-.aboutUs__title {
-    font-family: var(--ff__Nunito, sans-serif);
-    font-size: var(--scale--h1);
-    font-weight: var(--fw__semiBold);
-    color: hsla(var(--clr__neutral--800));
-}
-.aboutUs__description {
-    font-family: var(--ff__firaSans, sans-serif);
-    font-size: var(--scale--p2);
-    font-weight: var(--fw__regular);
-    color: hsla(var(--clr__neutral--600));
-}
-.__image {
-    filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
-    border-radius: 500px 0px 500px 500px;
-    margin-bottom: var(--spc__scale--10);
-}
-.aboutUs__profile {
-    --gap: 21px;
-    display: grid;
-    grid-gap: var(--gap);
-    margin-bottom: var(--spc__scale--9);
-}
-.aboutUs__name {
-    font-family: var(--ff__Nunito, sans-serif);
-    font-size: var(--scale--h4);
-    font-weight: var(--fw__bold);
-    color: hsla(var(--clr__primary--100));
-}
-.aboutUs__bio {
-    --width: 412px;
-    font-family: var(--ff__firaSans, sans-serif);
-    font-size: var(--scale--p3);
-    font-weight: var(--fw__regular);
-    width: min(var(--width), 100%);
-    color: hsla(var(--clr__neutral--600));
-}
 .__thirdColumn {
     display: grid;
     justify-content: center;
@@ -68,21 +24,7 @@
     width: fit-content;
     position: relative;
 }
-.__ellipseCircle {
-    --bottom: 30px;
-    position: absolute;
-    bottom: var(--bottom);
-    left: 0;
-    z-index: -1;
-}
-.__dots {
-    --top: -42px;
-    --left: 0px;
-    position: absolute;
-    top: var(--top);
-    right: var(--left);
-    z-index: -1;
-}
+
 @media screen and (min-width: 768px) {
     .__firstRow {
         --gap: 25px;
@@ -94,15 +36,8 @@
         display: grid;
         align-items: center;
     }
-    .__image {
-        margin-bottom: 0;
-    }
     .__secondRow {
         padding-block: var(--spc__scale--5);
-    }
-    .__dots {
-        --top: 20px;
-        --left: -37px;
     }
 }
 @media screen and (min-width: 1055px) {
@@ -122,11 +57,5 @@
         display: grid;
         grid-template-columns: 1fr var(--max__width);
         grid-gap: var(--gap);
-    }
-    .__dots {
-        --top: -42px;
-    }
-    .__ellipseCircle {
-        --bottom: 0;
     }
 }
