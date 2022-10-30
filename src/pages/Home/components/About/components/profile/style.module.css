@@ -1,0 +1,20 @@
+.aboutProfile {
+    --gap: 21px;
+    display: grid;
+    grid-gap: var(--gap);
+    margin-bottom: var(--spc__scale--9);
+}
+.aboutProfile__name {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h4);
+    font-weight: var(--fw__bold);
+    color: hsla(var(--clr__primary--100));
+}
+.aboutProfile__bio {
+    --width: 412px;
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p3);
+    font-weight: var(--fw__regular);
+    width: min(var(--width), 100%);
+    color: hsla(var(--clr__neutral--600));
+}
