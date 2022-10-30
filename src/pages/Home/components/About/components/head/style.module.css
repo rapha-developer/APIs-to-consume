@@ -1,0 +1,19 @@
+.aboutHead {
+    --gap: 17px;
+    display: grid;
+    grid-gap: var(--gap);
+    justify-content: center;
+    margin-bottom: 113px;
+}
+.aboutHead__title {
+    font-family: var(--ff__Nunito, sans-serif);
+    font-size: var(--scale--h1);
+    font-weight: var(--fw__semiBold);
+    color: hsla(var(--clr__neutral--800));
+}
+.aboutHead__description {
+    font-family: var(--ff__firaSans, sans-serif);
+    font-size: var(--scale--p2);
+    font-weight: var(--fw__regular);
+    color: hsla(var(--clr__neutral--600));
+}
