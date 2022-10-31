@@ -108,6 +108,7 @@ const createItemsToBuildNavbar = [
 const createItemsToBuildFooter = [
 	{
 		title: "Poke fun",
+		target: false,
 		items: [
 			{
 				label: "Misc items",
@@ -128,41 +129,44 @@ const createItemsToBuildFooter = [
 		],
 	},
 	{
-		title: "Company",
+		title: "APIs",
+		target: false,
 		items: [
 			{
-				label: "About Us",
-				url: "#",
+				label: "Advice",
+				url: "/advice",
 			},
 			{
-				label: "Career",
-				url: "#",
+				label: "Rick & Morty",
+				url: "/rickAndMorty",
 			},
 			{
-				label: "Become Investor",
-				url: "#",
+				label: "Pokemon Api",
+				url: "/pokeApi",
 			},
 		],
 	},
 	{
-		title: "Support",
+		title: "Ui Cases",
+		target: true,
 		items: [
 			{
-				label: "FAQ",
-				url: "#",
+				label: "Ui Dashboard",
+				url: "https://www.behance.net/gallery/152776501/Clean-DashboardUI-Code-Design",
 			},
 			{
-				label: "Policy",
-				url: "#",
+				label: "Ui Footer",
+				url: "https://www.behance.net/gallery/143696389/Footer-UI-Code-Design",
 			},
 			{
-				label: "Business",
-				url: "#",
+				label: "Ui Profile",
+				url: "https://www.behance.net/gallery/150259979/User-Card-UI-Code-Design",
 			},
 		],
 	},
 	{
 		title: "Contact",
+		target: true,
 		items: [
 			{
 				label: "Behance",
