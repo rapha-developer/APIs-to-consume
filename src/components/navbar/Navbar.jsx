@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../../assets/logo-min.svg'
+import myLogo from '../../assets/MyLogo-api.svg'
 import burgerIcon from'../../assets/burger-menu.svg'
 import { useLocation } from 'react-router-dom'
 
@@ -28,7 +28,7 @@ function Navbar() {
             <div className={`${styles.navbar__row} container`}>
                 <div className={styles.navbar__head}
                     data-visible={visibility}>
-                    <img src={logo} 
+                    <img src={myLogo} 
                         alt="Logo of website" 
                         className={styles.navbar__logo} />
                     <button className={styles.navbar__menu}
