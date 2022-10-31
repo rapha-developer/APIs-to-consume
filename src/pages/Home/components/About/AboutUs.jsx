@@ -6,17 +6,28 @@ import AboutHead from './components/head/AboutHead';
 import AboutAvatar from './components/avatar/AboutAvatar';
 import AboutProfile from './components/profile/AboutProfile';
 import styles from './style.module.css'
+import { useEffect, useState } from 'react';
 
 function AboutUs() {
-    const githubData = createGithubProfile
-
+    useEffect(() => {
+        getUserFromGithubAPi()
+    }, []);
+    const [user, setUser] = useState({})
+    function getUserFromGithubAPi() {
+        const url = "https://api.github.com/users/rapha-developer"
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setUser(data))
+    }
+    const githubData = (user?.avatar_url) ? user : createGithubProfile
+    
     return (
         <section className={styles.aboutUs}>
             <div className="container">
                 <AboutHead  />
                 <div className="__body">
                     <div className={styles.__firstRow}>
-                        <AboutAvatar image={githubData.image} />
+                        <AboutAvatar image={githubData.avatar_url} />
                         <div className={styles.__secondRow}>
                             <AboutProfile 
                                 name={githubData.name}
