@@ -1,7 +1,6 @@
 const createMyProjectTitle = {
-	title: "Our Client",
-	description:
-		"Several selected clients, who already believe in our service.",
+	title: "Meus Projetos",
+	description: "Alguns projetos selecionados mostram a qualidade do meu serviço.",
 };
 const createListOfCompanies = [
 	{
@@ -9,49 +8,49 @@ const createListOfCompanies = [
 			url: '/src/assets/myCompanyTenzies.svg',
 			altText: "Tenzies Game Project Logo",
 		},
-		url: "#",
+		url: "https://github.com/rapha-developer/tenzies-game",
 	},
 	{
 		svg:{
 			url: '/src/assets/myCompanyCodepen.svg',
 			altText: "Codepen Profile Logo",
 		},
-		url: "#",
+		url: "https://codepen.io/rapha-developer/",
 	},
 	{
 		svg:{
 			url: '/src/assets/MyCompanyBehance.svg',
 			altText: "Behance Profile Logo",
 		},
-		url: "#",
+		url: "https://www.behance.net/rapha-developer/",
 	},
 ];
 const createListOfCardsApi = [
 	{
-		title: "Business Idea Planning",
-		description: "We present you a proposal and discuss niffty-gritty like",
+		title: "Estudo Constante Autodidata",
+		description: "Busco sempre aprender novas técnicas, linguagens e saberes",
 		iconType: "boxSearch",
 	},
 	{
-		title: "Financial Planning System",
-		description: "Protocols apart from aen gage models, pricing billing",
+		title: "Pensamento Técnico Claro",
+		description: "A clareza de um software reflete-se em sua organização",
 		iconType: "wallet",
 	},
 	{
-		title: "Development Website and App",
-		description: "Communication protocols apart from engagement models",
+		title: "Desenvolvimento Criativo & Limpo",
+		description: "Descubro soluções não ousadas para problemas não resolvidos",
 		iconType: "code",
 	},
 	{
-		title: "Market Analysis Project",
-		description: "Protocols apart from aen gage models, pricing billing",
+		title: "Auto Análise Flexível",
+		description: "A flexibilização de uma tarefa ocorre pela sua ponderação",
 		iconType: "chart",
 	},
 ];
 const createGithubProfile = {
-	image: 'https://avatars.githubusercontent.com/u/91702283?v=4',
+	avatar_url: 'https://avatars.githubusercontent.com/u/91702283?v=4',
 	name: 'Raphael M. Developer',
-	bio: 'Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.'
+	bio: 'Web Developer | Front-end developer | Formado em Ciência da Computação | Programo em HTML5, CSS3, Javascript, React e PHP.'
 }
 const createFirstAdvice = {
 	slip: {
