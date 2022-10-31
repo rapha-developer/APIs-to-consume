@@ -22,6 +22,7 @@
     font-size: var(--scale--p3);
     font-weight: var(--fw__regular);
     color: hsla(var(--clr__neutral--600));
+    line-height: 1.7;
     margin-bottom: var(--spc__scale--8);
     max-width: var(--max__width);
 }
