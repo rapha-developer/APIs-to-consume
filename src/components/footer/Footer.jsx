@@ -1,5 +1,5 @@
 
-import { createItemsToBuildFooter } from '../../data/constants'
+import { createItemsToBuildFooter, createAreaHero } from '../../data/constants'
 import logo from '../../assets/logo-min.svg'
 import styles from './style.module.css'
 import FooterGroup from './components/group/FooterGroup';
@@ -16,7 +16,7 @@ function Footer(props) {
         );
     });
     const footer = {
-        hero: props?.hero || 'Leading digital agency with solid design and development expertise. We build ready made websites, mobile applications, and elaborate online business services.',
+        hero: props?.hero || createAreaHero.description,
         alt: 'website logo'
     }   
     return (
