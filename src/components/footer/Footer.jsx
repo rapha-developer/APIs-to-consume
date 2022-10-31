@@ -1,6 +1,6 @@
 
 import { createItemsToBuildFooter, createAreaHero } from '../../data/constants'
-import logo from '../../assets/logo-min.svg'
+import myLogo from '../../assets/MyLogo-api.svg'
 import styles from './style.module.css'
 import FooterGroup from './components/group/FooterGroup';
 
@@ -10,6 +10,7 @@ function Footer(props) {
         return (
             <FooterGroup 
                 key={key}
+                target={footerItem.target}
                 title={footerItem.title}
                 items={footerItem.items}
             />
@@ -24,8 +25,8 @@ function Footer(props) {
             <div className={`container ${styles.footer__line}`}>
                 <div className={styles.__row}>
                     <div className={styles.__firstColumn}>
-                        <img src={logo}
-                            className='logo' 
+                        <img src={myLogo}
+                            className={styles.logo} 
                             alt={footer.alt} />
                         <h6 className={styles.footer__hero}>{footer.hero}</h6>
                     </div>
