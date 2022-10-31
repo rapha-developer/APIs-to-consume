@@ -2,8 +2,8 @@
 import styles from './style.module.css'
 function AboutHead(props) {
     const headData = {
-        title: props?.title || 'What our happy client say',
-        description: props?.description || 'Several selected clients, who already believe in our service.'
+        title: props?.title || "I'ts interesting about me",
+        description: props?.description || 'As informações mostradas abaixo foram coletadas da API do Github.'
     }
     return (
         <div className={styles.aboutHead}>

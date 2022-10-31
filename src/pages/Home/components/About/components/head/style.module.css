@@ -11,6 +11,11 @@
     font-weight: var(--fw__semiBold);
     color: hsla(var(--clr__neutral--800));
 }
+@media screen and (min-width: 767px) {
+    .aboutHead__title {
+        text-align: center;
+    }
+}
 .aboutHead__description {
     font-family: var(--ff__firaSans, sans-serif);
     font-size: var(--scale--p2);
