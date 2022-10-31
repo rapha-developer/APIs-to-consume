@@ -5,6 +5,7 @@ function FooterItem(props) {
     const location = useLocation()
     const footerItem = {
         url: props?.url || '',
+        target: (props.hasTarget && props.hasTarget === true) ? '_blank' : '',
         label: props?.label || 'Not found label in props'
     }
     const isActive = (location.pathname === footerItem.url) ? true : false
@@ -12,6 +13,7 @@ function FooterItem(props) {
     return (
         <li className={styles.footer__item}>
             <a href={footerItem.url} 
+                target={footerItem.target}
                 data-active={isActive}
                 className={styles.footer__link}>{footerItem.label}</a>
         </li>
