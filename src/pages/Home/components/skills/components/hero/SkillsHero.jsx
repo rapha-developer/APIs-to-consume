@@ -1,9 +1,10 @@
 
+import { createMySkillsHero } from '../../../../../../data/constants'
 import styles from './style.module.css'
 function SkillsHero(props) {
     const skillsHero = {
-        title: props?.title || 'How can we help your Business ?',
-        description: props?.description || 'We build ready made websites, mobile applications, and elaborate online business services.'
+        title: props?.title || createMySkillsHero.title,
+        description: props?.description || createMySkillsHero.description
     }
     return (
         <div className="skillsHero">
