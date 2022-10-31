@@ -2,6 +2,15 @@ const createMyProjectTitle = {
 	title: "Meus Projetos",
 	description: "Alguns projetos selecionados mostram a qualidade do meu serviço.",
 };
+const createAreaHero = {
+	title: "A Digital API Consumer",
+	description: "API Consumer é um site que reúne três APIs (Interface de Programação de Aplicativos): Advice, Rick and Morty e Poke API. Cada página contém várias features e usa vários endpoints",
+	button__text: 'Meus Projects'
+}
+const createMySkillsHero = {
+	title: "Como posso ajudar no seu negócio ?",
+	description: "Construo aplicações web, landing pages a partir de figma templates, games e entre outros serviços. Vejam minhas skills:"
+}
 const createListOfCompanies = [
 	{
 		svg:{
@@ -475,6 +484,8 @@ const createSocialMediasToContactSocial = {
 };
 export {
 	createMyProjectTitle,
+	createAreaHero,
+	createMySkillsHero,
 	createListOfCompanies,
 	createListOfCardsApi,
 	createGithubProfile,
