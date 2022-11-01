@@ -1,16 +1,22 @@
 .pokemon__collection {
-    --gap: 30px;
+    --min__width: 350px;
+    --gap: 40px;
     display: grid;
     grid-gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 500px) {
     .pokemon__collection {
-        justify-items: center;
+        --min__width: calc(100% - 1rem);
     }
 }
 @media screen and (min-width: 1024px) {
     .pokemon__collection {
         --gap: 45px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .pokemon__collection {
+        justify-items: center;
     }
 }
