@@ -18,7 +18,8 @@ function SingleCharacter() {
     }
     
     return (
-        <section className={styles.singleCharacter}>
+        <section className={styles.singleCharacter}
+                id="rick-single-character-id">
             <div className="container">
                 <div className={styles.__row}>
                     <div className={styles.__columnHero}>

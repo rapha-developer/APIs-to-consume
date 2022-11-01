@@ -24,11 +24,13 @@ function FindCharacter() {
     return (
         <section className={styles.findCharacter}>
             <div className={`${styles.findCharacter__grid} container`}>
-                <div className={styles.firstRow}>
+                <div className={styles.firstRow}
+                    id='rick-first-row-id'>
                     <h2 className={styles.__title}>{findCharacterData.title}</h2>
                     <p className={styles.__subtitle}>{findCharacterData.subtitle}</p>
                 </div>
-                <div className={styles.secondRow}>
+                <div className={styles.secondRow} 
+                    id='rick-second-row-id'>
                     <RickForm 
                         collectCharacters={collectCharacters}
                         button__text='Find character'

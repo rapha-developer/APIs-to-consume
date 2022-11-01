@@ -9,7 +9,8 @@ function RickHero() {
         description: 'Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto, Morty, um adolescente não tão brilhante quanto o avô.'
     }
     return (
-        <section className={styles.heroSection}>
+        <section className={styles.heroSection} 
+                id="rick-hero-section-id">
             <div className="container">
                 <div className={styles.__row}>
                     <div className="col">
