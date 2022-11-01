@@ -47,10 +47,34 @@ function AdviceForm(props) {
             return;
         }
         const url = `https://api.adviceslip.com/advice/search/${search}`
-        fetch(url)
+        await fetch(url)
             .then(res => res.json())
             .then(data => props.collectResults(data))
             .catch(error => alert(error));
+        scrollDown()
+    }
+    function scrollDown() {
+        const allHeightsNecessaryToScrollDown = [
+            document.getElementById('navbar-id').clientHeight,
+            document.getElementById('home-hero-id').clientHeight,
+            document.getElementById('random-advice-id').clientHeight,
+            document.getElementById('advice-hero-form-id').clientHeight,
+        ];
+        const allHeightsAdded = sumAllHeightsToMakeScrollDown(allHeightsNecessaryToScrollDown)
+        const halfSecond = 500
+        setTimeout(() => {
+            window.scroll({
+                top: allHeightsAdded,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }, halfSecond)
+    }
+    function sumAllHeightsToMakeScrollDown(heights) {
+        const sumOfHeights = heights.reduce((accumulatorHeight, currentHeight) => {
+            return accumulatorHeight + currentHeight
+        });
+        return sumOfHeights
     }
     return (
         <form action="#" 
