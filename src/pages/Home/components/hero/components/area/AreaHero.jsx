@@ -10,13 +10,26 @@ function AreaHero(props) {
         button__text: props?.button__text || createAreaHero.button__text
     }
     function handleClick() {
-        const fullHeightOfHeroSection = 608
-        window.scroll({
-            top: fullHeightOfHeroSection,
-            left: 0,
-            behavior: 'smooth',
-
+        const allHeightsNecessaryToScrollDown = [
+            document.getElementById('home-hero-id').clientHeight,
+            document.getElementById('navbar-id').clientHeight,
+        ];
+        const allHeightsAdded = sumAllHeightsToMakeScrollDown(allHeightsNecessaryToScrollDown)
+        const halfSecond = 500
+        setTimeout(() => {
+            window.scroll({
+                top: allHeightsAdded,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }, halfSecond)
+    }
+    function sumAllHeightsToMakeScrollDown(heights) {
+        const sumOfHeights = heights.reduce((accumulatorHeight, currentHeight) => {
+            return accumulatorHeight + currentHeight
         });
+        const excessHeight = 125
+        return sumOfHeights - excessHeight
     }
     return (
         <div className={`homeHero__col ${styles.__columnHero}`}>

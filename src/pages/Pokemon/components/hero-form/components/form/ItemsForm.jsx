@@ -35,15 +35,25 @@ function ItemsForm(props) {
     }
 
     function scrollDown() {
-        const fullHeightOfHeroSection = 608
+        const allHeightsNecessaryToScrollDown = [
+            document.getElementById('explore-item-id').clientHeight,
+            document.getElementById('navbar-id').clientHeight,
+        ];
+        const allHeightsAdded = sumAllHeightsToMakeScrollDown(allHeightsNecessaryToScrollDown)
         const twoSeconds = 2000
         setTimeout(() => {
             window.scroll({
-                top: fullHeightOfHeroSection,
+                top: allHeightsAdded,
                 left: 0,
                 behavior: 'smooth'
             });
         }, twoSeconds)
+    }
+    function sumAllHeightsToMakeScrollDown(heights) {
+        const sumOfHeights = heights.reduce((accumulatorHeight, currentHeight) => {
+            return accumulatorHeight + currentHeight
+        });
+        return sumOfHeights
     }
     return (
         <form action=""

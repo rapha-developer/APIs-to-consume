@@ -16,6 +16,29 @@ function GenerationForm(props) {
         .then(res => res.json())
         .then(data => props.collectPokemon(data))
         .catch(error => alert(error))
+
+        scrollDown()
+    }
+    function scrollDown() {
+        const allHeightsNecessaryToScrollDown = [
+            document.getElementById('hero-pokemon-id').clientHeight,
+            document.getElementById('navbar-id').clientHeight,
+        ];
+        const allHeightsAdded = sumAllHeightsToMakeScrollDown(allHeightsNecessaryToScrollDown)
+        const twoSeconds = 2000
+        setTimeout(() => {
+            window.scroll({
+                top: allHeightsAdded,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }, twoSeconds)
+    }
+    function sumAllHeightsToMakeScrollDown(heights) {
+        const sumOfHeights = heights.reduce((accumulatorHeight, currentHeight) => {
+            return accumulatorHeight + currentHeight
+        });
+        return sumOfHeights
     }
     const generations = createGenerationsToBuildForm
 
