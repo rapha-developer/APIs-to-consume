@@ -1,10 +1,19 @@
 .nav__pagination {
-    margin: 0 auto var(--spc__scale--7);
+    margin: 0 auto var(--spc__scale--12);
     display: grid;
-    justify-content: center;
 }
 .pagination__list {
-    display: flex;
+    --min__width: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
+}
+@media screen and (min-width: 500px) {
+    .nav__pagination {
+        justify-content: center;
+    }
+    .pagination__list {
+        display: flex;
+    }
 }
 
 .page__link {
@@ -12,10 +21,10 @@
     display: block;
     padding: var(--spc__scale--4) var(--spc__scale--6);
     line-height: 1.25;
-    
+    text-align: center;
     background: hsla(var(--clr__neutral--100));
     border: 1px solid hsla(var(--clr__neutral--500));
-
+    
     font-family: var(--ff__Jost, sans-serif);
     font-size: var(--scale--p3);
     font-weight: var(--fw__semiBold);
