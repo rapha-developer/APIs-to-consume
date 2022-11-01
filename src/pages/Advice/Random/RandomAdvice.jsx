@@ -24,7 +24,8 @@ function RandomAdvice() {
         increaseAdviceCount()
     }
     return (
-        <section className={styles.randomAdvice}>
+        <section className={styles.randomAdvice}
+            id='random-advice-id'>
             <div className="container">
                 <div className={styles.__row}>
                     <div className={`__col ${styles.__columnAdviceCard}`}>
