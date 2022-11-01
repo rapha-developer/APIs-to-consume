@@ -30,6 +30,20 @@ function ItemsForm(props) {
             .then(res => res.json())
             .then(data => props.collectItems(data))
             .catch(error => props.collectErrors(error))
+
+        scrollDown()
+    }
+
+    function scrollDown() {
+        const fullHeightOfHeroSection = 608
+        const twoSeconds = 2000
+        setTimeout(() => {
+            window.scroll({
+                top: fullHeightOfHeroSection,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }, twoSeconds)
     }
     return (
         <form action=""
