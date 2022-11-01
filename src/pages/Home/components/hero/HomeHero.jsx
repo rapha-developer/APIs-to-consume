@@ -8,7 +8,8 @@ function HomeHero(props) {
         description: props?.description,
     }
     return (
-        <section className={styles.homeHero}>
+        <section className={styles.homeHero}
+                id='home-hero-id'>
             <div className="container">
                 <div className={styles.homeHero__row}>
                     <AreaHero 

@@ -9,7 +9,8 @@ function ExploreItems(props) {
         type: props?.type || 'medicine'
     }
     return (
-        <section className={styles.exploreItems}>
+        <section className={styles.exploreItems} 
+                id="explore-item-id">
             <div className="container">
                 <div className={styles.__row}>
                     <div className={`__col ${styles.__columnMain}`}>

@@ -8,7 +8,8 @@ function HeroPokemon(props) {
     }
 
     return (
-        <section className={styles.heroPokemon}>
+        <section className={styles.heroPokemon} 
+                id="hero-pokemon-id">
             <div className="container">
                 <div className={styles.__row}>
                     <div className={`__col ${styles.__columnMain}`}>

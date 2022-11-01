@@ -24,7 +24,7 @@ function Navbar() {
         setVisibility((oldVisibility) => !oldVisibility)
     }
     return (
-        <nav className={styles.navbar}>
+        <nav className={styles.navbar} id="navbar-id">
             <div className={`${styles.navbar__row} container`}>
                 <div className={styles.navbar__head}
                     data-visible={visibility}>
