@@ -32,7 +32,7 @@ function Navbar() {
                         alt="Logo of website" 
                         className={styles.navbar__logo} />
                     <button className={styles.navbar__menu}
-                            aria-controls='navbar__body' 
+                            aria-controls={styles.navbar__body} 
                             onClick={changeVisibility}>
                         <img src={burgerIcon} 
                             alt="Burger Icon Clickable menu" />
