@@ -28,7 +28,7 @@ function Footer(props) {
                         <img src={myLogo}
                             className={styles.logo} 
                             alt={footer.alt} />
-                        <h6 className={styles.footer__hero}>{footer.hero}</h6>
+                        <p className={styles.footer__hero}>{footer.hero}</p>
                     </div>
                     <div className={styles.__footerColumns}>
                         {footerMenus}
