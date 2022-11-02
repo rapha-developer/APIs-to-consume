@@ -22,7 +22,7 @@ function AllItems(props) {
     }
 	const nameWithoutTrace = pokeList.name.replaceAll('-', ' ');
     const allItemsHero = {
-		title: `${pokeList.size} Poke items found in this { ${nameWithoutTrace} } category`,
+		title: `${pokeList.size} Poke items found`,
 		description: `Uma lista de ${pokeList.size} Poke items foram encontrados nesta { ${nameWithoutTrace} } categoria`
 	}
 	return (
