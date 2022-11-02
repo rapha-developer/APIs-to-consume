@@ -15,8 +15,9 @@
 .contact__link {
     font-family: var(--ff__Jost, sans-serif);
     font-size: var(--scale--p3);
-    font-weight: var(--fw__regular);
-    color: hsla(var(--clr__neutral--500));
+    font-weight: var(--fw__medium);
+    color: hsla(var(--clr__neutral--600));
+    transition: all 0.3s ease-in;
 }
 .contact__link:hover {
     color: hsla(var(--clr__primary--100));

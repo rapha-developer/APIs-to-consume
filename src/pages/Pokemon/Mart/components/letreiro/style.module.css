@@ -43,7 +43,7 @@
     font-family: var(--ff__firaSans, sans-serif);
     font-size: var(--scale--h3);
     font-weight: var(--fw__regular);
-    color: hsla(var(--clr__neutral--500));
+    color: hsla(var(--clr__neutral--600));
 }
 .pokeLetreiro__balance {
     font-family: var(--ff__firaSans, sans-serif);

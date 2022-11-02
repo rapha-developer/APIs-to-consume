@@ -30,5 +30,5 @@
     font-family: var(--ff__firaSans, sans-serif);
     font-size: var(--scale--p4);
     font-weight: var(--fw__medium);
-    color: hsla(var(--clr__neutral--500));
+    color: hsla(var(--clr__neutral--600));
 }
