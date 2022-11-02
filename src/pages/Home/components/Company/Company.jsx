@@ -4,7 +4,7 @@ function Company(props) {
     const company = {
         svg: props.companySvg,
         url: props.url,
-        altText: props.alt_Text
+        altText: props.altText
     }
 
     return (
