@@ -1,19 +1,13 @@
 
-import companyBehanceSvg from '../../../../assets/MyCompanyBehance.svg'
-import companyCodepenSvg from '../../../../assets/myCompanyCodepen.svg'
-import companyTenziesSvg from '../../../../assets/myCompanyTenzies.svg'
-
 import { createMyProjectTitle, createListOfCompanies } from '../../../../data/constants'
 import CompaniesCollection from './components/collection/CompaniesCollection'
 import ProjectsPreface from './components/preface/ProjectsPreface'
 import styles from './style.module.css'
+
 function MyProjects() {
-    const allAssetsUrls = [companyBehanceSvg, companyCodepenSvg, companyTenziesSvg]
     const companies = createListOfCompanies.map((companyItem) => {
-        const foundSvg = allAssetsUrls.filter((assetsUrl) => assetsUrl.includes(companyItem.svg.url))
-        const foundPosition = 0
         return {
-            svg: foundSvg[foundPosition],
+            name: companyItem.svg.name,
             url: companyItem.url,
             altText: companyItem.svg.altText
         }

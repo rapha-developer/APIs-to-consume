@@ -9,7 +9,7 @@ function CompaniesCollection(props) {
         return (
             <Company 
                 key={key}
-                companySvg={companyItem.svg}
+                companyName={companyItem.name}
                 altText={companyItem.altText}
                 url={companyItem.url}
             />
