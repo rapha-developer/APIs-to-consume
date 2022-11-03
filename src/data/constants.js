@@ -14,21 +14,21 @@ const createMySkillsHero = {
 const createListOfCompanies = [
 	{
 		svg:{
-			url: 'assets/myCompanyTenzies.svg',
+			name: 'myCompanyTenzies',
 			altText: "Tenzies Game Project Logo",
 		},
 		url: "https://github.com/rapha-developer/tenzies-game",
 	},
 	{
 		svg:{
-			url: 'assets/myCompanyCodepen.svg',
+			name: 'myCompanyCodepen',
 			altText: "Codepen Profile Logo",
 		},
 		url: "https://codepen.io/rapha-developer/",
 	},
 	{
 		svg:{
-			url: 'assets/MyCompanyBehance.svg',
+			name: 'MyCompanyBehance',
 			altText: "Behance Profile Logo",
 		},
 		url: "https://www.behance.net/rapha-developer/",
