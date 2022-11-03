@@ -10,9 +10,10 @@ import styles from './style.module.css'
 function MyProjects() {
     const allAssetsUrls = [companyBehanceSvg, companyCodepenSvg, companyTenziesSvg]
     const companies = createListOfCompanies.map((companyItem) => {
-        const foundSvg = allAssetsUrls.filter((assetsUrl) => (assetsUrl === companyItem.svg.url))
+        const foundSvg = allAssetsUrls.filter((assetsUrl) => assetsUrl.includes(companyItem.svg.url))
+        const foundPosition = 0
         return {
-            svg: foundSvg,
+            svg: foundSvg[foundPosition],
             url: companyItem.url,
             altText: companyItem.svg.altText
         }
