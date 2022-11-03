@@ -1,5 +1,5 @@
 
-import PokemonItem from '../item/pokemonItem'
+import PokemonItem from '../item/PokemonItem'
 import styles from './style.module.css'
 function PokemonCollection(props) {
     const pokemon = {
