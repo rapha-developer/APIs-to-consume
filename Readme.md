@@ -35,6 +35,7 @@
     <a href="#hammer_and_pick-features">Features</a> &nbsp;|&nbsp;  
     <a href="#pencil-license">License</a> 
 </p>
+<br />
 
 ## :student: **Why?**
 <p align="left"><b>API: Application programming interface.</b><br />To learn how to create web applications with React that consume external APIs, with functionality to <b>search</b> or <b>list</b> numerous objects stored in each API. Knowledge of <b>Promises</b>, <b>forms</b> that send user “input” and receive API “response” using Fetch() were necessary to complete this project.<br />The chosen APIs were the <b>Advice Slip</b> API, <b>Rick and Morty</b>, and <b>Pokemon</b> (Poke API).</p><br />
