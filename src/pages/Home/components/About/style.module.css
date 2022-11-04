@@ -1,5 +1,5 @@
 .aboutUs {
-    margin-bottom: var(--spc__scale--20);
+    padding-block: var(--spc__scale--30) var(--spc__scale--26);
 }
 .__thirdColumn {
     display: grid;
