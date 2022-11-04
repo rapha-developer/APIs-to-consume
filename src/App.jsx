@@ -17,11 +17,13 @@ import {
 import PokemonPage from "./pages/Pokemon/PokemonPage";
 import PokeExplorePage from "./pages/Pokemon/pages/explore/PokeExplorePage";
 import ContactPage from "./pages/Contact/ContactPage";
+import NotFoundPage from "./pages/Error/NotFoundPage";
 function App() {
 	return (
 		<div className="App">
 			<Navbar />
 			<Routes>
+				<Route path="*" element={<NotFoundPage />} />
 				<Route
 					path={createItemsToBuildNavbar[createPagesPosition.first].url}
 					element={<HomePage />}
