@@ -27,14 +27,27 @@
         <img src="https://img.shields.io/badge/license-MIT-1abc9c.svg" alt="License MIT" />
     </a>  
 </p>
+<p align="center">
+    <a href="#student-why">Why (por que?)</a> &nbsp;|&nbsp;
+    <a href="#rocket-demo">Demo</a> &nbsp;|&nbsp;
+    <a href="#desktop_computer-to-use">How to use? (Como usar)</a> &nbsp;|&nbsp;
+    <a href="#zap-tech-stack">Tech Stack</a> &nbsp;|&nbsp;
+    <a href="#hammer_and_pick-features">Features</a> &nbsp;|&nbsp;  
+    <a href="#pencil-license">License</a> 
+</p>
 
 ## :student: **Why?**
 <p align="left"><b>API: Application programming interface.</b><br />To learn how to create web applications with React that consume external APIs, with functionality to <b>search</b> or <b>list</b> numerous objects stored in each API. Knowledge of <b>Promises</b>, <b>forms</b> that send user “input” and receive API “response” using Fetch() were necessary to complete this project.<br />The chosen APIs were the <b>Advice Slip</b> API, <b>Rick and Morty</b>, and <b>Pokemon</b> (Poke API).</p><br />
 <p align="left"><b>API: Interface de programação de aplicações.</b><br /><i>Para aprender como criar aplicações web com React que consomem APIs externas, com funcionalidades de <b>busca</b> ou <b>listagem</b> de inúmeros objetos armazenados em cada API. Conhecimentos em <b>Promisses</b>, <b>formulários</b> que enviam “input” do usuário e recebem o “response” da API usando Fetch() foram necessários para completar esse projeto.<br />As APIs escolhidas foram a <b>Advice Slip</b> API, <b>Rick and Morty</b>, and <b>Pokemon</b> (Poke API).</i></p>
 <br />
+
 ## :rocket: **Demo**
 
-### :fist_right::boom:	<a target="_blank" href="https://rapha-behance-portfolio.netlify.app/">DEMO</a>  :boom::fist_left:
+### :fist_right::boom:	<a target="_blank" href="https://apis-fun-to-consume.netlify.app/">DEMO</a>  :boom::fist_left:
+<br />
+                                                                                              
+https://user-images.githubusercontent.com/91702283/199996703-b9a7333a-8268-4e3b-96ea-2efd1ecaff3f.mp4
+                                                                                              
 <br />
 
 ## :desktop_computer: **To use**
